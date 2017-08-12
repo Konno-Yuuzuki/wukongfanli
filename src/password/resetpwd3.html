@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>悟空返利</title>
+    <!--css style-->
+    <link rel="stylesheet" href="../css/resetpwd.css">
+    <script src="../js/lib/placeholder.js"></script>
+</head>
+<body>
+<!--客户信息开始-->
+<div class="header">
+    <div class="user-info">
+        <ul>
+            <li><a href="./login/login.html">你好，请登录</a></li>
+            <li class="active"><a href="">免费注册</a></li>
+            <li><em></em></li>
+            <li><a href="">我的订单</a></li>
+            <li><em></em></li>
+            <li class="sh-bag">
+                <span></span>
+                <a href="">购物袋</a>
+                <i>0</i>
+            </li>
+            <li><em></em></li>
+            <li><a href="">商家中心</a></li>
+            <li><em></em></li>
+            <li><a href="">客户服务</a></li>
+        </ul>
+    </div>
+</div>
+<!--客户信息结束-->
+
+<!-- logo-搜索开始 -->
+<div class="logo-search">
+    <div class="lo-sea">
+        <div class="logo">
+            <h1>
+                <a href="./image/imgs/LOGO.jpg"></a></h1>
+        </div>
+        <div class="search">
+            <form action="searchIfo">
+                <label for="seacrhIfo"></label>
+                <input type="text" placeholder="请输入想找的宝贝" id="seacrhIfo"/>
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    <a href="">
+                        10:00上新
+                        <i class="t-updata"></i>
+                    </a>
+                </li>
+                <li class="info-line"></li>
+                <li>
+                    <a href="">
+                        超值低价
+                        <i class="pr-cp"></i>
+                    </a>
+                </li>
+                <li class="info-line"></li>
+                <li>
+                    <a href="">
+                        验货质检
+                        <i class="inspection"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- logo-搜索结束-->
+<!--导航栏开始-->
+<div class="nav">
+    <div class="nav-c">
+        <div class="home"><a href="../index.html">首页</a></div>
+        <ul>
+            <li><a href="">超优惠</a></li>
+            <li><a href="">值得买</a></li>
+            <li><a href="">9.9包邮</a></li>
+            <li><a href="">1元夺宝</a></li>
+            <li><a href="">邀请有奖</a></li>
+            <li><a href="">手机版</a></li>
+        </ul>
+    </div>
+</div>
+<!--导航栏结束-->
+
+<div class="password-m">
+    <div class="password-c">
+        <h3>找回密码</h3>
+        <div class="pw-f">
+            <ul class="clear clearfix">
+                <li class="active"><i>1</i>
+                    <p>填写账号</p></li>
+                <li class="active"><em></em></li>
+                <li class="active"><em></em></li>
+                <li class="active"><i>2</i>
+                    <p>验证身份</p></li>
+                <li class="active"><em></em></li>
+                <li class="active"><em></em></li>
+                <li class="active"><i>3</i>
+                    <p>重置密码</p></li>
+                <li><em></em></li>
+                <li><em></em></li>
+                <li><i>4</i>
+                    <p>完成</p></li>
+            </ul>
+            <div class="form step3">
+                <p>
+                    <label class="new-pwd" for="newpwd">新密码：</label>
+                    <input type="text" id="newpwd">
+                    <i class="error"></i>
+                    <span class="pwd-fmt-hint">密码必须为6-25位数字、字母、符号</span>
+                </p>
+                <div class="pwd-complexity">
+                    <ol class="clear clearfix">
+                        <li class="level"></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <span>弱</span>
+                </div>
+                <p>
+                    <label class="new-pwd" for="con_newpwd">确认密码：</label>
+                    <input type="text" id="con_newpwd">
+                    <i class="error"></i>
+                    <span class="con-pwd">确认密码不一致</span>
+                </p>
+                <p><a class="next" href="./resetpwd4.html">确定</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

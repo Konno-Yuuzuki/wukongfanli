@@ -1,0 +1,641 @@
+@import url("./mainCss.less");
+@import url("./reset.less");
+@import url("./publicStyle.less");
+
+//资产中心
+body {
+    background-color: #fff;
+}
+
+//我的余额
+.mySum {
+    margin-left: 12px;
+    float: left;
+    .mySumTitle {
+        h3 {
+            width: 982px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #e2e2e2;
+            padding-left: 40px;
+            background-color: #fff;
+            font-size: 16px;
+            color: #666;
+        }
+    }
+    .mySumCenter {
+        margin-top: 20px;
+        border: 1px solid #e2e2e2;
+        background-color: #fff;
+        height: 185px;
+        .myAccountInfo {
+            float: left;
+            width: 325px;
+            height: 100%;
+            border-right: 1px solid #e2e2e2;
+            padding-top: 14px;
+            .infoUp {
+                text-align: center;
+                a {
+                    width: 80px;
+                    height: 80px;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #c9c9c9;
+                    border-radius: 80px;
+                    overflow: hidden;
+                    text-align: center;
+                    line-height: 80px;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+            }
+            .infoDown {
+                padding: 0px 48px;
+                p {
+                    margin-top: 5px;
+                }
+                span {
+                    color: #bcbcbc;
+                    &.accountSafe {
+                        margin-left: 40px;
+
+                    }
+                }
+                em {
+                    &.grade {
+                        font-family: "AdobeHebrew";
+                        font-style: italic;
+                        color: @mainColor;
+                        font-weight: bold;
+                    }
+                    &.safeStatus {
+                        color: @mainColor;
+                    }
+                }
+            }
+        }
+        .myAccountSun {
+            width: 652px;
+            height: 100%;
+            float: left;
+            .sum {
+                height: 50%;
+                border-bottom: 1px solid #e2e2e2;
+                padding-left: 30px;
+                position: relative;
+                div {
+                    padding-top: 16px;
+                    font-size: 16px;
+                    span {
+                        &.active {
+                            font-size: 24px;
+                            color: @mainColor;
+                            font-weight: bold;
+                        }
+                    }
+                    em {
+                        font-size: 14px;
+                        margin-left: 4px;
+                    }
+                    &.useable {
+                        font-size: 12px;
+                    }
+                }
+                a {
+                    width: 72px;
+                    height: 24px;
+                    display: block;
+                    border: 1px solid #e2e2e2;
+                    line-height: 24px;
+                    text-align: center;
+                    background-color: #efefef;
+                    border-radius: 4px;
+                    color: #5e5e5e;
+                    position: absolute;
+                    top: 50%;
+                    right: 90px;
+                    margin-top: -12px;
+                }
+            }
+        }
+    }
+    .tradeInfo {
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid #e2e2e2;
+        .tradeTitle {
+            width: 100%;
+            height: 42px;
+            padding: 6px 0;
+            border-bottom: 1px solid #e2e2e2;
+            a {
+                width: 92px;
+                height: 100%;
+                font-size: 16px;
+                display: inline-block;
+                line-height: 34px;
+                text-align: center;
+                border-right: 1px dashed #e2e2e2;
+                &.active {
+                    color: @mainColor;
+                }
+            }
+        }
+        .informations {
+            height: 60px;
+            letter-spacing: -1px;
+            line-height: 60px;
+            font-size: 12px;
+            text-align: center;
+            border-bottom: 1px solid #e2e2e2;
+            div {
+                float: left;
+            }
+            .productId {
+                width: 474px;
+                color: #5e5e5e;
+                padding-left: 40px;
+                text-align: left;
+                line-height: normal;
+                padding-top: 16px;
+                p {
+                    font-size: 14px;
+                }
+                label {
+                    color: #bcbcbc;
+                }
+            }
+            .orderTime {
+                width: 120px;
+            }
+            .productsPrice {
+                width: 110px;
+            }
+            .orderStatus {
+                width: 118px;
+            }
+            .productStatus {
+                width: 154px;
+            }
+        }
+    }
+    .pagePosition {
+        margin-top: 22px;
+        margin-bottom: 26px;
+        .pages {
+            display: block;
+            float: right;
+            a {
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                text-align: center;
+                line-height: 22px;
+                border: 1px solid #e2e2e2;
+                color: #bcbcbc;
+                vertical-align: middle;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+            span {
+                vertical-align: middle;
+                color: #bcbcbc;
+                &.current {
+                    width: 24px;
+                    height: 24px;
+                    display: inline-block;
+                    background-color: @mainColor;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 24px;
+                }
+            }
+            em {
+                vertical-align: middle;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            input {
+                width: 32px;
+                height: 24px;
+                vertical-align: middle;
+                border: 1px solid #e2e2e2;
+            }
+            button {
+                width: 40px;
+                height: 24px;
+                border: 1px solid #e2e2e2;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//优惠券
+.myCoupons {
+    width: 982px;
+    float: left;
+    margin-left: 12px;
+    .couponsUp {
+        width: 982px;
+        height: 42px;
+        line-height: 30px;
+        padding: 6px 0;
+        border: 1px solid #e2e2e2;
+        .couponsTitle,
+        .couponStatus {
+            float: left;
+        }
+        h3 {
+            font-size: 16px;
+            color: #333;
+            padding: 0 30px;
+            border-right: 1px dashed #e2e2e2;
+        }
+        a {
+            margin-left: 30px;
+
+            &.active {
+                color: @mainColor;
+            }
+        }
+    }
+    .allCoupons {
+        display: none;
+    }
+    .coupons {
+        width: 322px;
+        height: 164px;
+        margin-top: 20px;
+        background-color: #ff6f6f;
+        background-image: url("../image/imgs/coupon_bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 16px;
+        margin-right: 8px;
+        float: left;
+        p {
+            letter-spacing: -1px;
+            color: #fff;
+        }
+        .couponContent {
+            height: 80px;
+
+            padding-top: 34px;
+            p {
+                font-size: 30px;
+            }
+        }
+        .couponArea {
+            height: 80px;
+            margin-top: 2px;
+            padding-top: 10px;
+            p {
+                line-height: 30px;
+            }
+        }
+        &.mrNone {
+            margin-right: 0;
+        }
+    }
+    //没有优惠券
+    .noCoupons {
+        width: 100%;
+        height: 240px;
+        margin-top: 20px;
+        border: 1px solid #e2e2e2;
+        text-align: center;
+        line-height: 238px;
+        .notHave {
+            font-size: 18px;
+            color: #333333;
+            font-weight: bold;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 286px;
+                margin-top: -46px;
+            }
+        }
+    }
+}
+
+//会员特权
+.userVip {
+    width: 982px;
+    height: auto;
+    float: left;
+    margin-left: 12px;
+    .vipTitle {
+        width: 100%;
+        height: 42px;
+        padding: 6px 0;
+        border: 1px solid #e2e2e2;
+        h2 {
+            width: 140px;
+            height: 100%;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+            line-height: 28px;
+            font-weight: bold;
+            border-right: 1px dashed #e2e2e2;
+        }
+    }
+    .vipDetail {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border: 1px solid #e2e2e2;
+        padding: 26px 16px 22px;
+        h3 {
+            font-size: 18px;
+            color: #444444;
+            font-weight: bold;
+        }
+        p {
+            font-size: 14px;
+            color: #444;
+        }
+        table {
+            th {
+                &.v0 {
+                    background: url("../image/icon/V0.png") no-repeat center;
+                }
+                &.v1 {
+                    background: url("../image/icon/V1-.png") no-repeat center;
+                }
+                &.v2 {
+                    background: url("../image/icon/V2.png") no-repeat center;
+                }
+                &.v3 {
+                    background: url("../image/icon/V3.png") no-repeat center;
+                }
+                &.v4 {
+                    background: url("../image/icon/V4.png") no-repeat center;
+                }
+                &.v5 {
+                    background: url("../image/icon/V5.png") no-repeat center;
+                }
+            }
+        }
+        .userVipGrade {
+            height: 80px;
+            padding-left: 92px;
+            position: relative;
+            img {
+                width: 80px;
+                height: 80px;
+                //border: 1px solid #e2e2e2;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            h3 {
+                font-size: 20px;
+                padding-top: 6px;
+            }
+            p {
+                color: #bcbcbc;
+                margin-top: 6px;
+
+                &.grade {
+                    font-size: 16px;
+                }
+                &.nextGrade {
+                    font-size: 12px;
+                }
+                em {
+                    width: 19px;
+                    height: 12px;
+                    display: inline-block;
+                    background: url("../image/icon/V0.png") no-repeat center;
+                }
+            }
+        }
+        .vipGradeDetail {
+            margin-top: 20px;
+            p {
+                color: #444444;
+                margin-top: 4px;
+            }
+            table {
+                margin-top: 16px;
+                thead {
+                    background-color: #feeeeb;
+                    tr {
+                        height: 62px;
+                        border: 1px solid #bcbcbc;
+                    }
+                }
+                tbody {
+                    tr {
+                        height: 52px;
+                        text-align: center;
+                        //font-weight: bold;
+                    }
+                }
+                td, th {
+                    border: 1px solid #bcbcbc;
+                }
+                th {
+                    &.hydj {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+        }
+        .whatW {
+            margin-top: 20px;
+            p {
+                color: #444;
+                margin-top: 10px;
+            }
+            .whatWImg {
+                padding: 40px 0 84px;
+                div {
+                    float: left;
+                    position: relative;
+                }
+                img {
+                    float: left;
+                }
+                p {
+                    float: left;
+                    margin-left: 10px;
+                    line-height: 26px;
+                    color: #444;
+                }
+                span {
+                    font-size: 20px;
+                    color: @mainColor;
+                    position: absolute;
+                    left: 20px;
+                    bottom: -40px;
+                }
+                .equalSign {
+                    margin-left: 16px;
+                    margin-top: 40px;
+                }
+                .brpu {
+                    width: 356px;
+                    margin-left: 16px;
+                    .whatBrpu {
+                        width: 182px;
+                        font-size: 12px;
+                        color: #444;
+                    }
+                    span {
+                        left: 50px;
+                    }
+                }
+                .plugSign {
+                    margin-left: 10px;
+                    margin-top: 32px;
+                }
+                .interact {
+                    margin-left: 8px;
+                    .whatInteract {
+                        width: 168px;
+                        font-size: 12px;
+                        line-height: 25px;
+                    }
+                    span {
+                        left: 70px;
+                    }
+                }
+            }
+        }
+        .vipCheck {
+            p {
+                color: #444;
+                line-height: 24px;
+                margin-top: 10px;
+            }
+            a {
+                color: @mainColor;
+            }
+        }
+        .getW {
+            margin-top: 34px;
+            h3 {
+                float: left;
+            }
+            a {
+                font-size: 18px;
+                float: left;
+                margin-left: 32px;
+                color: @mainColor;
+            }
+            p {
+                margin-top: 14px;
+            }
+            table {
+                margin-top: 10px;
+                tr, td, th {
+                    border: 1px solid #bcbcbc;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #444;
+                    padding: 0 12px;
+                }
+                td {
+                    letter-spacing: -1px;
+                }
+                p {
+                    text-align: left;
+                    line-height: 26px;
+                    margin-top: 0;
+                    letter-spacing: 1px;
+                }
+                thead {
+                    background-color: #feeeeb;
+                    tr {
+                        height: 60px;
+                    }
+                    .wzhi,
+                    .rewardNum {
+                        width: 98px;
+                    }
+                    .actionContent,
+                    .rewardW,
+                    .getMethod {
+                        width: 178px;
+                    }
+                    .ps {
+                        width: 211px;
+                    }
+                }
+                tbody {
+                    tr {
+                        height: 98px;
+                        text-align: center;
+                    }
+                    .action {
+                        color: @mainColor;
+                    }
+                }
+            }
+        }
+        .vipPrivilege {
+            margin-top: 36px;
+            p {
+                margin-top: 6px;
+            }
+            table {
+                margin-top: 16px;
+                border: 8px solid #e5e5e5;
+                border-collapse: separate;
+                border-spacing: 0;
+                tr,
+                th,
+                td {
+                    border-right: 1px solid #e5e5e5;
+                    border-bottom: 1px solid #e5e5e5;
+                    width: 128px;
+                    height: 60px;
+                    text-align: center;
+                    font-size: 16px;
+                    position: relative;
+                    border-collapse: collapse;
+
+                }
+                .leibie {
+                    width: 156px;
+                    background: url("../image/icon/duijioaxian_bg.png") no-repeat center;
+                }
+                thead {
+
+                }
+                tbody {
+
+                    border-top: none;
+                    background-color: #feeeeb;
+                }
+                .tdTitle {
+                    width: 156px;
+                    background-color: #fff;
+                    font-weight: bold;
+                }
+                span {
+                    position: absolute;
+                    &.hytq {
+                        left: 14px;
+                        bottom: 5px;
+                    }
+                    &.hydj {
+                        top: 8px;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

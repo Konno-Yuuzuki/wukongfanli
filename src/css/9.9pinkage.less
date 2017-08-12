@@ -1,0 +1,202 @@
+@import url("./mainCss.less");
+@import url("./reset.less");
+@import url("./publicStyle.less");
+
+/*9.9包邮*/
+
+/*导航栏*/
+.nav {
+    .nav-c {
+        padding-left: 0;
+        ul {
+            li {
+                a {
+                    width: 114px;
+                    text-align: center;
+                    margin: 0;
+                }
+                &.j_by {
+                    a {
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                        background-color: @mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*9.9bady*/
+.mainContent {
+    width: 1200px;
+    margin: 0 auto;
+    display: table;
+}
+
+/*bannar*/
+.slide {
+    width: 1200px;
+    margin: 0 auto;
+    img {
+        width: 1200px;
+    }
+}
+
+/*商品分类*/
+
+.topSide {
+    width: inherit;
+    height: 40px;
+    background-color: #fff;
+    line-height: 40px;
+    margin-top: 20px;
+    padding-left: 9px;
+    li {
+        float: left;
+        a {
+            display: block;
+            span {
+                display: block;
+                margin: 0 9px;
+                font-family: "SimHei";
+            }
+        }
+        &.active {
+            a {
+                color: @mainColor;
+            }
+        }
+    }
+}
+
+/*商品列表*/
+.J_sp {
+    width: 1200px;
+    ul {
+        margin-right: -20px;
+    }
+    li {
+        width: 285px;
+        float: left;
+        margin-right: 20px;
+        margin-top: 20px;
+        background-color: #fff;
+        a {
+            display: block;
+        }
+        .J_sp_image {
+            img {
+                width: 285px;
+                height: 284px;
+            }
+        }
+        .J_sp_detail {
+            height: 94px;
+            padding: 10px 10px 0;
+            p {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .J_sp_price {
+                div {
+                    float: left;
+                }
+                .sp_price {
+                    color: @mainColor;
+                    font-family: @numberFont;
+                    em {
+                        font-size: 18px;
+                    }
+                    span {
+                        width: 42px;
+                        height: 28px;
+                        font-size: 36px;
+                    }
+                }
+                .tip {
+                    width: 68px;
+                    height: 24px;
+                    font-size: 20px;
+                    color: @mainColor;
+                    font-family: "DroidSansFallback";
+                    text-align: center;
+                    line-height: 22px;
+                    border: 1px solid @mainColor;
+                    border-radius: 4px;
+                    margin-left: 6px;
+                    margin-top: 16px;
+                }
+                .readySell {
+                    float: right;
+                    text-align: right;
+                    margin-top: 6px;
+                    i {
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        background: url("../image/icon/c086f236fabf61d6.png") no-repeat center;
+                    }
+                    span {
+                        display: block;
+                        color: #bcbcbc;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+/*分页*/
+.pagePosition {
+    text-align: center;
+    margin-top: 52px;
+    .pages {
+        display: inline-block;
+        height: 40px;
+        a,
+        span {
+            width: 40px;
+            height: 40px;
+            font-size: 12px;
+            color: #919191;
+            display: inline-block;
+            box-sizing: border-box;
+            margin-right: 1px;
+            box-shadow: 1px 1px 1px #d9d9d9;
+            background-color: #fff;
+            line-height: 40px;
+            float: left;
+        }
+        a {
+            cursor: pointer;
+            &:hover {
+                color: @mainColor;
+            }
+        }
+        .pg-prev,
+        .pg-next {
+            width: 90px;
+            height: 40px;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            background-color: #fff;
+        }
+        .pg-prev {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .pg-next {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .current {
+            background-color: @mainColor;
+            color: #fff;
+        }
+    }
+}

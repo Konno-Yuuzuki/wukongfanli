@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <title>悟空返利</title>
+    <!--css style-->
+    <link rel="stylesheet" href="../../css/accsettings.css">
+    <script src="../../../../vender/jquery/dist/jquery.js"></script>
+    <script src="../../../../js/personcenter/payCode.js"></script>
+</head>
+
+<body>
+<!--用户信息开始-->
+<div class="header">
+    <div class="user-info">
+        <ul>
+            <li><a href="./login/login.html">你好，请登录</a></li>
+            <li class="active"><a href="">免费注册</a></li>
+            <li><em></em></li>
+            <li><a href="">我的订单</a></li>
+            <li><em></em></li>
+            <li class="sh-bag">
+                <span></span>
+                <a href="">购物袋</a>
+                <i>0</i>
+            </li>
+            <li><em></em></li>
+            <li><a href="">商家中心</a></li>
+            <li><em></em></li>
+            <li><a href="">客户服务</a></li>
+        </ul>
+    </div>
+</div>
+<!--用户信息结束-->
+<!-- logo-搜索开始 -->
+<div class="logo-search">
+    <div class="lo-sea">
+        <div class="logo">
+            <h1>
+                <a href="./image/imgs/LOGO.jpg"></a></h1>
+        </div>
+        <div class="search">
+            <form action="searchIfo">
+                <label for="seacrhIfo"></label>
+                <input type="text" placeholder="请输入想找的宝贝" id="seacrhIfo"/>
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    <a href="">
+                        10:00上新
+                        <i class="t-updata"></i>
+                    </a>
+                </li>
+                <li class="info-line"></li>
+                <li>
+                    <a href="">
+                        超值低价
+                        <i class="pr-cp"></i>
+                    </a>
+                </li>
+                <li class="info-line"></li>
+                <li>
+                    <a href="">
+                        验货质检
+                        <i class="inspection"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- logo-搜索结束-->
+<!--导航栏开始-->
+<div class="nav">
+    <div class="nav-c">
+        <div class="home"><a href="../index.html">账号设置</a></div>
+        <ul class="clear clearfix">
+            <li><a href="">交易中心</a></li>
+            <li><a href="">资产中心</a></li>
+            <li><a href="">消息中心</a></li>
+            <li class="gohome"><a href="../../../../index.html">悟空首页〉〉</a></li>
+        </ul>
+    </div>
+</div>
+<!--导航栏结束-->
+<!-- 个人账户设置 -->
+<div class="accsettings">
+    <div class="settings clear clearfix">
+        <div class="asidebar">
+            <h3>账号设置</h3>
+            <ul>
+                <li><a href="../../accsettings.html"><i>基本资料</i><em>></em></a></li>
+                <li><a href="#" class="active"><i>安全中心</i><em>></em></a></li>
+                <li><a href=""><i>提现账号</i><em>></em></a></li>
+                <li><a href=""><i>账号绑定</i><em>></em></a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <div class="change-pwd">
+                <h3>安全中心</h3>
+                <div class="email xgsj paypwd">
+                    <p class="title">
+                        <span class="bt">设置支付密码</span>
+                        <em class="ts">每个月仅限修改一次，请慎重修改！</em><a>通过验证手机修改支付密码></a></p>
+                    <form class="" id="form_paypwd">
+                        <div class="clear clearfix" id="payPassword_container" data-busy="0">
+                            <label for="">支付密码：</label><span><input type="password" id="paypwd_once"
+                                                                    maxlength="6"></span>
+                            <p>
+                                <i class="first"><b></b></i>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i class="last"><b></b></i>
+                            </p>
+                        </div>
+                        <div class="clear clearfix" id="payPassword_container_again" data-busy="0">
+                            <label for="">确认支付密码：</label><span><input type="password" id="paypwd_again"
+                                                                      maxlength="6"></span>
+                            <p>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i><b></b></i>
+                                <i class="last"><b></b></i>
+                            </p>
+                        </div>
+                        <div><label for=""></label><a href="">确认</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 个人账户设置结束 -->
+</body>
+<script type="text/javascript">
+    importPaypwd("#payPassword_container");
+    importPaypwd("#payPassword_container_again");
+</script>
+</html>

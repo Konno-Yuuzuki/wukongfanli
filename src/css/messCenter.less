@@ -1,0 +1,131 @@
+@import url("mainCss.less");
+@import url("./reset.less");
+@import url("publicStyle.less");
+
+// 消息中心
+.accsettings {
+    .asidebar {
+        height: 240px;
+    }
+}
+
+//系统消息
+.sysMessage {
+    width: 982px;
+    height: auto;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    margin-left: 12px;
+    float: left;
+    .title {
+        h3 {
+            font-size: 16px;
+            padding-left: 16px;
+            margin: 0 20px;
+            line-height: 44px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+    }
+    .sysContent {
+        width: 100%;
+        .messages {
+            display: none;
+        }
+        ul {
+            margin: 26px 42px 20px 50px;
+        }
+        li {
+            padding-left: 100px;
+            position: relative;
+            .messTitle {
+                span {
+                    color: #444;
+                    font-size: 16px;
+                    vertical-align: middle;
+                }
+                input {
+                    vertical-align: middle;
+                }
+                em {
+                    font-size: 12px;
+                    color: #bcbcbc;
+                    vertical-align: bottom;
+                }
+                .delete {
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    background: url("../image/icon/icon_delete.png") no-repeat center;
+                    margin-top: 2px;
+                    float: right;
+                    cursor: pointer;
+                    &:hover {
+                        background: url("../image/icon/icon_delete_selected.png") no-repeat center;
+                    }
+                }
+            }
+            .messContent {
+                margin-top: 24px;
+                margin-left: 26px;
+                p {
+                    width: 460px;
+                    font-size: 12px;
+                    color: #444;
+                    line-height: 20px;
+                    letter-spacing: -1px;
+                }
+            }
+            .messTime {
+                position: absolute;
+                top: -16px;
+                left: 0;
+                .monthYear {
+                    width: 70px;
+                    height: 24px;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 24px;
+                    background-color: @mainColor;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+                .day {
+                    width: 70px;
+                    height: 44px;
+                    color: #444;
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 44px;
+                    background: url("../image/imgs/bevel_background.jpg") no-repeat center;
+                }
+            }
+        }
+        .messOperate {
+            margin-left: 150px;
+            font-size: 12px;
+            margin-bottom: 78px;
+            input {
+                margin-top: 1px;
+            }
+            a {
+                color: #999;
+                vertical-align: middle;
+                margin: 0 10px;
+            }
+            .line {
+                width: 1px;
+                height: 10px;
+                display: inline-block;
+                background-color: #999;
+                vertical-align: middle;
+            }
+        }
+    }
+    .noneSysContent {
+        width: 100%;
+        height: 228px;
+        text-align: center;
+        line-height: 228px;
+        color: #999;
+    }
+}

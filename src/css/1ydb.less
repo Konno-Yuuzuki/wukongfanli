@@ -1,0 +1,405 @@
+@import url("./reset.less");
+@import url("./publicStyle.less");
+
+/*1元夺宝*/
+
+/*导航栏*/
+.nav {
+    .nav-c {
+        padding-left: 0;
+        ul {
+            li {
+                a {
+                    width: 114px;
+                    text-align: center;
+                    margin: 0;
+                }
+                &.active {
+                    a {
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                        background-color: @mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainContent {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*bannar*/
+.bannar {
+    .slide {
+        img {
+            width: 1200px;
+        }
+    }
+}
+
+/*topSide*/
+.topSide {
+    margin-top: 20px;
+    margin-right: -16px;
+    div {
+        float: left;
+        a {
+            display: block;
+            span {
+                width: 288px;
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 60px;
+                display: block;
+                color: #fff;
+                background-color: @mainColor;
+                border-radius: 6px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+/*即将揭晓*/
+.publishing {
+    margin-top: 20px;
+    margin-right: -10px;
+    .p_good {
+        width: 232px;
+        height: 350px;
+        float: left;
+        margin-right: 10px;
+        border: 1px solid @mainColor;
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        .p_good_link {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            img {
+                width: 208px;
+                height: 208px;
+                margin: 11px 12px 0;
+                border: 1px solid #e5e5e5;
+            }
+            i {
+                width: 78px;
+                height: 78px;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url("../image/icon/now.png") no-repeat center;
+            }
+            .p_good_d {
+                display: block;
+                padding-top: 17px;
+                padding-bottom: 20px;
+                p {
+                    max-width: 210px;
+                    margin-left: 6px;
+                    a {
+                        color: #444;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .totalPeople {
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 14px;
+                    margin-left: 16px;
+                }
+                .publishTime {
+                    width: 208px;
+                    height: 34px;
+                    text-align: center;
+                    color: #fff;
+                    line-height: 34px;
+                    background-color: @mainColor;
+                    margin: 14px auto 0;
+                    span {
+                        font-size: 18px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*活动版块*/
+.all_goods {
+    margin-top: 18px;
+    .secitonTitle {
+        height: 22px;
+        border-left: 4px solid @mainColor;
+        h3 {
+            height: inherit;
+            font-size: 22px;
+            color: #444;
+            margin-left: 8px;
+            float: left;
+        }
+        .moreGoods {
+            float: right;
+            a {
+                display: block;
+                line-height: 22px;
+                color: #5e5e5e;
+                &:hover {
+                    color: @mainColor;
+                }
+            }
+        }
+    }
+    .mainGoods {
+        margin-top: 16px;
+        margin-right: -10px;
+        .publicityGood,
+        .goods {
+            width: 232px;
+            height: 400px;
+            float: left;
+            margin-right: 10px;
+            background-color: #fff;
+        }
+        .publicityGood {
+            a {
+                width: 232px;
+                height: 400px;
+                display: block;
+                overflow: hidden;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .goods {
+            border: 1px solid #e5e5e5;
+            &:hover {
+                outline: 1px solid @mainColor;
+            }
+            .goodsImg {
+                width: 100%;
+                text-align: center;
+                margin-top: 11px;
+                a {
+                    width: 208px;
+                    height: 208px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .goodDetail {
+                margin-top: 20px;
+                .goodsDescribe {
+                    width: 210px;
+                    margin-left: 6px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .needNum {
+                    color: #999;
+                    font-size: 12px;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                }
+                .alreadyNum {
+                    width: 208px;
+                    margin: 14px auto;
+                    p {
+                        width: 208px;
+                        height: 6px;
+                        float: left;
+                        background-color: #e5e5e5;
+                        margin-bottom: 10px;
+                        span {
+                            width: 120px;
+                            height: inherit;
+                            background-color: @mainColor;
+                            display: block;
+                        }
+                    }
+                    .cyrs {
+                        float: left;
+                    }
+                    .syrs {
+                        float: right;
+                        text-align: right;
+                    }
+                    em {
+                        color: #ff6600;
+                    }
+                    i {
+                        color: #bcbcbc;
+                        display: block;
+                        font-size: 12px;
+                    }
+                }
+                .ljdb {
+                    margin-top: 14px;
+                    a {
+                        width: 208px;
+                        height: 34px;
+                        font-size: 18px;
+                        display: block;
+                        text-align: center;
+                        line-height: 34px;
+                        background-color: @mainColor;
+                        &:hover {
+                            background-color: #f96969;
+                        }
+                    }
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*晒单分享*/
+.shaiDan {
+    .shaiDan_title {
+        margin-top: 18px;
+        height: 22px;
+        border-left: 4px solid @mainColor;
+        h3 {
+            height: inherit;
+            font-size: 22px;
+            color: #444;
+            margin-left: 8px;
+            float: left;
+        }
+        .shaiDan_more {
+            float: right;
+            a {
+                display: block;
+                line-height: 22px;
+                color: #5e5e5e;
+                &:hover {
+                    color: @mainColor;
+                }
+            }
+        }
+    }
+    .shaiDan_list {
+        margin-top: 16px;
+        .shaiDan_list_left {
+            width: 232px;
+            height: 410px;
+            float: left;
+            border: 1px solid #e5e5e5;
+            background-color: #fff;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                box-sizing: border-box;
+                padding: 10px 11px 7px;
+            }
+            img {
+                width: 208px;
+                height: 266px;
+            }
+            .shaiDan_user {
+                width: 100%;
+                height: 46px;
+                margin-top: 6px;
+                .sd_user_img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 40px;
+                    float: left;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .sd_user_info {
+                    float: left;
+                    margin-left: 8px;
+                    .userId {
+                        color: #22aaff;
+                    }
+                    .shaiDan_time {
+                        color: #bcbcbc;
+                        font-size: 12px;
+                        margin-left: 4px;
+                    }
+                    .user_comment {
+                        color: #444;
+                        margin-top: 4px;
+                    }
+                }
+            }
+            .shaiDan_comment {
+                width: 232px;
+                height: 82px;
+                padding-top: 10px;
+                padding-bottom: 8px;
+                margin-left: -11px;
+                padding-left: 11px;
+                padding-right: 11px;
+                background: url("../image/icon/bg_duobianxing.png") no-repeat center;
+                p {
+                    color: #bcbcbc;
+                }
+            }
+        }
+        .shaiDan_list_right {
+            width: 958px;
+            float: left;
+            margin-left: 10px;
+            ul {
+                margin-right: -10px;
+            }
+            li {
+                width: 232px;
+                height: 200px;
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #e5e5e5;
+                background-color: #fff;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-align: center;
+                    padding: 10px 10px 0;
+                    box-sizing: border-box;
+                    img {
+                        width: 208px;
+                        height: 156px;
+                    }
+                    div {
+                        width: 100%;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                    }
+                }
+                &:hover {
+                    outline: 1px solid @mainColor;
+                }
+            }
+        }
+    }
+}

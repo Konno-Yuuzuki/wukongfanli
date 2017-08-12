@@ -1,0 +1,132 @@
+<div class="homeAddress">
+    <div class="title">
+        <h3>收货地址</h3>
+    </div>
+    <div class="moreAddress">
+        <div class="alreadySave clear clearfix">
+            <p>已经保存的收货地址</p>
+            <span>您已经创建<em>2</em>个收货地址，最多可创建<em>10</em>个</span>
+        </div>
+        <div class="addressForms">
+            <ul class="clear clearfix">
+                <li class="active">
+                    <div class="addressDetail">
+                        <p><em>收货人：</em><span>王维</span></p>
+                        <p><em>地址：</em><span class="dizhi">湖北省 武汉市 洪山区武汉高科医疗器械园</span></p>
+                        <p><em>联系方式:</em><span>159****4758</span><a href="" title="修改">修改</a><i></i></p>
+                    </div>
+                    <div class="default">
+                        <p>默认地址</p>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="addressDetail">
+                        <p><em>收货人：</em><span>王维</span></p>
+                        <p><em>地址：</em><span class="dizhi">湖北省 武汉市 洪山区武汉高科医疗器械园</span></p>
+                        <p><em>联系方式:</em><span>159****4758</span><a href="" title="修改">修改</a><i></i></p>
+                    </div>
+                    <div class="default">
+                        <p>默认地址</p>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="addressDetail">
+                        <p><em>收货人：</em><span>王维</span></p>
+                        <p><em>地址：</em><span class="dizhi">湖北省 武汉市 洪山区武汉高科医疗器械园</span></p>
+                        <p><em>联系方式:</em><span>159****4758</span><a href="" title="修改">修改</a><i></i></p>
+                    </div>
+                    <div class="default">
+                        <p>默认地址</p>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="addressDetail">
+                        <p><em>收货人：</em><span>王维</span></p>
+                        <p><em>地址：</em><span class="dizhi">湖北省 武汉市 洪山区武汉高科医疗器械园</span></p>
+                        <p><em>联系方式:</em><span>159****4758</span><a href="" title="修改">修改</a><i></i></p>
+                    </div>
+                    <div class="default">
+                        <p>默认地址</p>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="addressDetail">
+                        <p><em>收货人：</em><span>王维</span></p>
+                        <p><em>地址：</em><span class="dizhi">湖北省 武汉市 洪山区武汉高科医疗器械园</span></p>
+                        <p><em>联系方式:</em><span>159****4758</span><a href="" title="修改">修改</a><i></i></p>
+                    </div>
+                    <div class="default">
+                        <p>默认地址</p>
+                    </div>
+                </li>
+                <li class="addAddress" id="addAddress">
+                    <a href="javascript:;"><i>+</i><span>新增地址</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mask">
+        <div class="addBox">
+            <div class="newAddress">
+                <h3>使用新地址</h3>
+            </div>
+            <div class="addForm">
+                <form action="" method="post" accept-charset="utf-8">
+                    <div class="contentForm">
+                        <div class="userTel">
+                            <p>
+                                <label for="username">收货人：</label>
+                                <input type="text" name="username" id="username" value=""><i class="yhxx">*</i>
+                            </p>
+                            <p>
+                                <label for="username">手&nbsp;&nbsp;机：</label>
+                                <input type="text" name="username" id="username" value=""><i class="yhxx">*</i>
+                            </p>
+                        </div>
+                        <div class="userAddress">
+                            <p class="provinces">
+                                <label>所在地区：</label>
+                                <select class="form-control" id="province"></select>
+                                <select class="form-control" id="city"></select>
+                                <select class="form-control" id="district"></select>
+                                <i class="szd">*</i>
+                            </p>
+                            <p>
+                                <label for="detailAddress">详细地址：</label>
+                                <input type="text" class="xxdz" name="username" id="detailAddress" value=""><i class="szd">*</i>
+                            </p>
+                            <p class="mrdz">
+                                <label></label>
+                                <input type="checkbox" name="" value="">
+                                <span>设为默认地址</span>
+                                <em>(设置为默认地址后，系统将在下次购买时自动选中该收货地址)</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear clearfix">
+                        <div class="buttons clear clearfix">
+                            <input type="submit" class="submit" value="确认">
+                            <a href="javascript:;" class="cancel" id="cancel">取消</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../../../js/lib/distpicker/distpicker.data.js" type="text/javascript"></script>
+    <script src="../../../js/lib/distpicker/distpicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+        $(".userAddress").distpicker({
+            placeholder: false
+        });
+        $("#addAddress a").on("click", function() {
+            $(".mask").show();
+            $(".addBox").slideDown();
+        });
+        $("#cancel").on("click", function() {
+            $(".addBox").slideUp();
+            $(".mask").hide();
+        });
+    })
+    </script>

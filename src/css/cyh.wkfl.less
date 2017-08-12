@@ -1,0 +1,165 @@
+@import url("mainCss.less");
+@import url("reset.less");
+@import url("publicStyle.less");
+
+/*超优惠*/
+
+/*导航栏*/
+.nav {
+    .nav-c {
+        padding-left: 0;
+        ul {
+            li {
+                a {
+                    width: 114px;
+                    text-align: center;
+                    margin: 0;
+                }
+                &.cyh {
+                    a {
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                        background-color: @mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*页面主体内容*/
+.mainContent {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*bannar*/
+.side {
+     width: 1200px;
+     margin: 0 auto;
+     img {
+         width: 1200px;
+     }
+ }
+
+/*女装饰品*/
+.allThemes {
+    width: inherit;
+    margin-top: 10px;
+    .activeTitle {
+        background: url("../image/icon/1200x50_female_ornaments.png") no-repeat center;
+    }
+    h1 {
+        height: 50px;
+        font-size: 28px;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+    }
+    .themeActive {
+        width: inherit;
+    }
+    li {
+        width: 590px;
+        height: 240px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #c2c2c2;
+        img {
+            width: 590px;
+            height: 214px;
+        }
+        .themeDetail {
+            height: 26px;
+            .discount {
+                float: left;
+                margin-top: 4px;
+                padding-left: 10px;
+                span {
+                    width: 70px;
+                    height: 18px;
+                    display: block;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 2px;
+                    background-color: #ff6182;
+                }
+            }
+            .quantity {
+                float: right;
+                margin-top: 6px;
+                padding-right: 20px;
+                font-size: 12px;
+                color: #333333;
+                em,
+                .onlyDays {
+                    color: @mainColor;
+                }
+
+            }
+        }
+        &:hover {
+            //outline: 2px solid @mainColor;
+            border-bottom-width: 2px;
+            border-bottom-color: @mainColor;
+
+        }
+    }
+}
+
+/*分类列表*/
+.listTable {
+    position: absolute;
+    left: 50%;
+    top: 518px;
+    margin-left: -708px;
+    .allClassify {
+        border: 1px solid #e2e2e2;
+        border-top: 2px solid @mainColor;
+        li {
+            a {
+                display: block;
+
+            }
+            &.comingSoon {
+                span {
+                    background-color: #fe7e35;
+                    border-bottom: none;
+                }
+            }
+            span {
+                width: 96px;
+                height: 30px;
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                background-color: @mainColor;
+                border-bottom: 1px solid #df2525;
+            }
+            &.active {
+                span {
+                    color: @mainColor;
+                    background-color: #fff;
+                    border-bottom: none;
+                }
+            }
+            &:hover {
+                &.active {
+                    span {
+                        background-color: #fff;
+                    }
+                }
+                span {
+                    background-color: #f96969;
+                }
+            }
+        }
+    }
+}

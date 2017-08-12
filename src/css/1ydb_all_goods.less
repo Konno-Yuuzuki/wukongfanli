@@ -1,0 +1,258 @@
+@import url("./reset.less");
+@import url("./publicStyle.less");
+/*1元夺宝全部商品*/
+
+/*导航栏*/
+.nav {
+    .nav-c {
+        padding-left: 0;
+        ul {
+            li {
+                a {
+                    width: 114px;
+                    text-align: center;
+                    margin: 0;
+                }
+                &.active {
+                    a {
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                        background-color: @mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*导航路径*/
+
+#goods {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.goods {
+    width: 1200px;
+    margin: 0 auto;
+    .path {
+        width: 100%;
+        height: 42px;
+        height: 42px;
+        line-height: 42px;
+        a:hover {
+            color: @mainColor;
+        }
+    }
+    .goods_all {
+        width: 100%;
+        .goods_nav {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            padding: 16px 0px;
+            .nav_lis {
+                float: left;
+                padding: 0 22px;
+                a {
+                    width: 76px;
+                    height: 28px;
+                    display: block;
+                    font-size: 16px;
+                    color: #777;
+                    line-height: 28px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    letter-spacing: -1px;
+                    border-radius: 6px;
+                    background-color: #fff;
+                }
+                &.active {
+                    a {
+                        color: #fff;
+                        background-color: @mainColor;
+                    }
+                }
+                &:hover {
+                    a {
+                        color: #fff;
+                        background-color: @mainColor;
+                    }
+                }
+            }
+            .line {
+                width: 1px;
+                height: 14px;
+                float: left;
+                margin-top: 7px;
+                margin-bottom: 7px;
+                background-color: #bcbcbc;
+            }
+        }
+        .goods_all_list {
+            ul {
+                margin-right: -10px;
+            }
+            li {
+                width: 232px;
+                height: 400px;
+                float: left;
+                margin-top: 10px;
+                margin-right: 10px;
+                .sp {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #fff;
+                    border: 1px solid #e5e5e5;
+                    &:hover {
+                        outline: 1px solid @mainColor;
+                    }
+                    .goodsImg {
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 11px;
+                        a {
+                            width: 208px;
+                            height: 208px;
+                            display: block;
+                            margin: 0 auto;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .goodDetail {
+                        margin-top: 20px;
+                        .goodsDescribe {
+                            width: 210px;
+                            margin-left: 6px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            a:hover {
+                                color: @mainColor;
+                            }
+                        }
+                        .needNum {
+                            color: #999;
+                            font-size: 12px;
+                            margin-left: 10px;
+                            margin-top: 5px;
+                        }
+                        .alreadyNum {
+                            width: 208px;
+                            margin: 14px auto;
+                            p {
+                                width: 208px;
+                                height: 6px;
+                                float: left;
+                                background-color: #e5e5e5;
+                                margin-bottom: 10px;
+                                span {
+                                    width: 120px;
+                                    height: inherit;
+                                    background-color: @mainColor;
+                                    display: block;
+                                }
+                            }
+                            .cyrs {
+                                float: left;
+                            }
+                            .syrs {
+                                float: right;
+                                text-align: right;
+                            }
+                            em {
+                                color: #ff6600;
+                            }
+                            i {
+                                color: #bcbcbc;
+                                display: block;
+                                font-size: 12px;
+                            }
+                        }
+                        .ljdb {
+                            margin-top: 14px;
+                            a {
+                                width: 208px;
+                                height: 34px;
+                                font-size: 18px;
+                                display: block;
+                                text-align: center;
+                                line-height: 34px;
+                                background-color: @mainColor;
+                                &:hover {
+                                    background-color: #f96969;
+                                }
+                            }
+                            span {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagePosition {
+        text-align: center;
+        margin-top: 52px;
+        .pages {
+            display: inline-block;
+            height: 40px;
+            a,
+            span {
+                width: 40px;
+                height: 40px;
+                font-size: 12px;
+                color: #919191;
+                display: inline-block;
+                box-sizing: border-box;
+                margin-right: 1px;
+                box-shadow: 1px 1px 1px #d9d9d9;
+                background-color: #fff;
+                line-height: 40px;
+                float: left;
+            }
+            a {
+                font-size: 16px;
+                cursor: pointer;
+                &:hover {
+                    color: @mainColor;
+                    //border: 1px solid @mainColor;
+                }
+            }
+            .pg-prev,
+            .pg-next {
+                width: 90px;
+                height: 40px;
+                font-size: 16px;
+                display: inline-block;
+                text-align: center;
+                background-color: #fff;
+            }
+            .pg-prev {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            .pg-next {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .current {
+                background-color: @mainColor;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+/*商品详情*/
+
+
+
+

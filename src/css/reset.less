@@ -1,0 +1,261 @@
+/* less主体样式 */
+@mainColor: #f44848;
+@mainFont: SimHei, Microsoft YaHei;
+@numberFont: microsoft yahei;
+/*reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+
+fieldset,
+img {
+    border: 0 none
+}
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+
+dl,
+ul,
+ol,
+menu,
+li {
+    list-style: none
+}
+
+/*重置类表前导符号为onne,menu在HTML5中有效 */
+
+blockquote,
+q {
+    quotes: none
+}
+
+/* 重置嵌套引用的引号类型 */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+/* 重置嵌套引用*/
+
+input,
+select,
+textarea,
+button {
+    vertical-align: middle
+}
+
+/* 重置表单控件垂直居中*/
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+/* 重置表单button按钮效果 */
+
+body {
+    background: #f6f6f6;
+}
+
+/* 重置body 页面背景为灰色 */
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-size: 14px;
+    //line-height: 1;
+    color: #333;
+    font-family: SimHei;
+}
+
+/* 重置页面文字属性 */
+
+h1,
+h2,
+h3,
+i,
+em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* 重置input中的placehold的颜色 */
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #c3c3c3;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #c3c3c3;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #c3c3c3;
+}
+
+/*重置input[type="number"]中的箭头*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+
+/*重置input焦点状态样式*/
+
+input:focus {
+    outline: none;
+}
+
+/* 重置链接a标签 */
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    color: @mainColor;
+}
+
+/* 重置链接a标签的鼠标滑动效果 */
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+/* 重置样式标签的样式 */
+
+caption {
+    display: none;
+}
+
+/* 重置表格标题为隐藏 */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+/* 重置table属性 */
+
+img {
+    vertical-align: top
+}
+
+/* 图片在当前行内的垂直位置 */
+
+/* 页面设置 */
+
+/* 取消a标签点击后的虚线框 */
+
+a {
+    outline: none;
+}
+
+/* 取消a标签和button点击后的蓝色边框 */
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+/* a:active {
+    star: expression(this.onFocus=this.blur());
+} */
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+
+/*
+::selection {color: #fff;background-color: #4C6E78;}      
+::-moz-selection {color: #fff;background-color: #4C6E78;}   
+*/
+
+/*清除浮动*/
+
+.clear {
+    clear: both;
+}
+
+/*清除浮动--推荐使用*/
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}

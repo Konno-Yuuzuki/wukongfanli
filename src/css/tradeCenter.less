@@ -1,0 +1,781 @@
+@import url("mainCss.less");
+@import url("./reset.less");
+@import url("publicStyle.less"); // 边框样式
+#border {
+    .all(@bold: 1px,
+    @style: solid,
+    @color: #e2e2e2) {
+        border: @bold @style @color;
+    }
+    .top(@bold: 1px,
+    @style: solid,
+    @color: #e2e2e2) {
+        border-top: @bold @style @color;
+    }
+    .right(@bold: 1px,
+    @style: solid,
+    @color: #e2e2e2) {
+        border-right: @bold @style @color;
+    }
+    .bottom(@bold: 1px,
+    @style: solid,
+    @color: #e2e2e2) {
+        border-bottom: @bold @style @color;
+    }
+    .left(@bold: 1px,
+    @style: solid,
+    @color: #e2e2e2) {
+        border-left: @bold @style @color;
+    }
+}
+
+// 交易中心
+#ui-view {
+    width: 982px;
+    float: left;
+    margin-left: 12px;
+}
+
+//我的订单
+.orderContent {
+    width: inherit;
+    .myOrder {
+        height: 42px;
+        #border> .all;
+        background-color: #fff;
+        line-height: 40px;
+        margin-bottom: 20px;
+        h1 {
+            font-size: 16px;
+            color: #666;
+            margin-left: 40px;
+        }
+    }
+    .allOrders {
+        width: inherit;
+        #border> .all(1px);
+        background-color: #fff;
+        padding: 9px 29px 39px;
+        .orderStatus {
+            height: 39px;
+            margin-bottom: 10px;
+            #border> .bottom(2px);
+            ul {
+                float: left;
+                li {
+                    float: left;
+                    a {
+                        width: 82px;
+                        height: 37px;
+                        display: block;
+                        line-height: 39px;
+                        text-align: center;
+                        em {
+                            color: @mainColor;
+                        }
+                    }
+                    &.active {
+                        #border> .bottom(2px);
+                        border-color: @mainColor;
+                        a {
+                            color: @mainColor;
+                        }
+                    }
+                }
+            }
+            span {
+                float: right;
+                height: 37px;
+                line-height: 39px;
+                text-align: center;
+                font-size: 14px;
+                padding: 0 30px;
+                i {
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    float: left;
+                    margin-top: 11px;
+                    margin-right: 5px;
+                    background: url("../image/icon/icon_delete.png") no-repeat center;
+                }
+            }
+        }
+        .orderSearch {
+            height: 28px;
+            margin-bottom: 34px;
+            input {
+                width: 292px;
+                height: inherit;
+                font-size: 12px;
+                #border> .all(1px);
+                float: left;
+                padding: 8px 10px;
+            }
+            a {
+                width: 70px;
+                height: inherit;
+                float: left;
+                color: #666;
+                font-size: 12px;
+                text-align: center;
+                line-height: 28px;
+                background-color: #f5f5f5;
+                #border> .all(1px);
+                box-sizing: border-box;
+            }
+        }
+        .orderTable {
+            .tTitle {
+                span {
+                    font-size: 12px;
+                    color: #5e5e5e;
+                    display: block;
+                    float: left;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .product {
+                    width: 248px;
+                }
+                .unitPrice {
+                    width: 106px;
+                }
+                .quantity {
+                    width: 80px;
+                }
+                .realityPrice {
+                    width: 100px;
+                }
+                .rebatePrice {
+                    width: 106px;
+                }
+                .exchangeStatus {
+                    width: 154px;
+                }
+                .claims {
+                    width: 128px;
+                }
+                select {
+                    width: 100px;
+                    height: 18px;
+                    font-size: 12px;
+                }
+            }
+            .tables {
+                table {
+                    width: 100%;
+                    margin-top: 10px;
+                    table-layout: auto;
+                    #border> .all(1px);
+                    thead {
+                        .orderTitle {
+                            height: 45px;
+                            background-color: #f2f2f2;
+                            #border> .bottom(1px);
+                            td {
+                                span {
+                                    font-size: 12px;
+                                    color: #444;
+                                    float: left;
+                                    margin-left: 10px;
+                                    &.orderNum {
+                                        margin-left: 30px;
+                                    }
+                                    &.orderShop {
+                                        margin-left: 40px;
+                                        a {
+                                            width: 90px;
+                                            display: block;
+                                            color: #444;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            &:hover {
+                                                color: @mainColor;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        td {
+                            font-size: 12px;
+                            vertical-align: top;
+                            word-wrap: break-word;
+                            word-break: break-all;
+                            padding-top: 14px;
+                            line-height: 18px;
+                            span,
+                            del,
+                            em,
+                            a {
+                                display: block;
+                                text-align: center;
+                            }
+                            a:hover {
+                                color: @mainColor;
+                            }
+                        }
+                        .shangpin {
+                            width: 248px;
+                            padding: 8px 10px;
+                            img {
+                                float: left;
+                            }
+                            a {
+                                float: left;
+                                width: 108px;
+                                margin-left: 10px;
+                                text-align: left;
+                            }
+                        }
+                        .danjia {
+                            width: 106px;
+                            text-align: center;
+                            font-family: @numberFont;
+                            span {
+                                color: #5e5e5e;
+                            }
+                            del {
+                                color: #bcbcbc;
+                            }
+                        }
+                        .shuliang {
+                            width: 80px;
+                            font-family: @numberFont;
+                        }
+                        .shifujine {
+                            width: 100px;
+                            #border> .right(1px);
+                            span,
+                            i {
+                                font-family: @numberFont;
+                            }
+                            em {
+                                color: #bcbcbc;
+                            }
+                        }
+                        .fanlijine {
+                            width: 106px;
+                            #border> .right(1px);
+                            span {
+                                font-family: @numberFont;
+                            }
+                        }
+                        .jszt {
+                            width: 154px;
+                            #border> .right(1px);
+                        }
+                        .lipei {
+                            width: 128px;
+                            .applyClaim {
+                                width: 70px;
+                                height: 24px;
+                                text-align: center;
+                                line-height: 24px;
+                                color: #fff;
+                                background-color: #5087ca;
+                                border-radius: 4px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .pagePosition {
+                margin-top: 16px;
+                .pages {
+                    display: block;
+                    float: right;
+                    a {
+                        width: 24px;
+                        height: 24px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 22px;
+                        #border> .all(1px);
+                        color: #bcbcbc;
+                        vertical-align: middle;
+                        box-sizing: border-box;
+                        cursor: pointer;
+                    }
+                    span {
+                        vertical-align: middle;
+                        color: #bcbcbc;
+                        &.current {
+                            width: 24px;
+                            height: 24px;
+                            display: inline-block;
+                            background-color: @mainColor;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                    }
+                    em {
+                        vertical-align: middle;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                    input {
+                        width: 32px;
+                        height: 24px;
+                        vertical-align: middle;
+                        #border> .all(1px);
+                    }
+                    button {
+                        width: 40px;
+                        height: 24px;
+                        #border> .all(1px);
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 收货地址
+.homeAddress {
+    width: inherit;
+    #border> .all();
+    padding: 0 15px;
+    background-color: #fff;
+    .title {
+        width: 942px;
+        height: 45px;
+        line-height: 45px;
+        margin: 0 auto;
+        #border> .bottom();
+        h3 {
+            font-size: 16px;
+            color: #666;
+        }
+    }
+    .moreAddress {
+        .alreadySave {
+            margin-top: 20px;
+            p {
+                font-size: 16px;
+                color: #444;
+                font-weight: bold;
+                display: inline-block;
+                vertical-align: top;
+            }
+            span {
+                font-size: 14px;
+                color: #444;
+                vertical-align: bottom;
+            }
+            em {
+                color: @mainColor;
+                vertical-align: bottom;
+            }
+        }
+        .addressForms {
+            margin-bottom: 20px;
+            li {
+                width: 270px;
+                height: 150px;
+                padding: 2px;
+                float: left;
+                position: relative;
+                margin-right: 20px;
+                margin-top: 20px;
+                box-sizing: border-box;
+                background: url("../image/icon/border_normal.png") no-repeat center;
+                &.addAddress {
+                    a {
+                        display: block;
+                        line-height: 150px;
+                        text-align: center;
+                        i {
+                            font-size: 28px;
+                            color: #ccc;
+                            vertical-align: middle;
+                        }
+                        span {
+                            color: #5087ca;
+                            vertical-align: middle;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+                .addressDetail {
+                    font-family: SimHei;
+                    color: #0d0d0d;
+                    letter-spacing: -1px;
+                    p {
+                        margin-top: 24px;
+                        margin-right: 14px;
+                        &:after {
+                            content: "";
+                            height: 0;
+                            display: block;
+                            visibility: hidden;
+                            clear: both;
+                        }
+                    }
+                    em {
+                        width: 68px;
+                        display: block;
+                        float: left;
+                        text-align: right;
+                    }
+                    span {
+                        float: left;
+                        &.dizhi {
+                            width: 170px;
+                        }
+                    }
+                    a {
+                        color: #5087ca;
+                        float: left;
+                        margin-left: 16px;
+                    }
+                    i {
+                        width: 16px;
+                        height: 16px;
+                        float: left;
+                        margin-left: 14px;
+                        background: url("../image/icon/icon_delete.png") no-repeat center;
+                        cursor: pointer;
+                        &:hover {
+                            background: url("../image/icon/icon_delete_selected.png") no-repeat center;
+                        }
+                    }
+                }
+                .default {
+                    display: none;
+                }
+                &.active {
+                    background: url("../image/icon/border_colorful.png") no-repeat center;
+                    .default {
+                        width: 60px;
+                        height: 20px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 20px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        display: block;
+                        background-color: #000;
+                        filter: Alpha(opacity=40);
+                        background-color: rgba(0, 0, 0, .4);
+                    }
+                }
+            }
+        }
+    }
+    //添加收货地址
+    .mask {
+        background-color: #000;
+        filter: Alpha(opacity=40);
+        background-color: rgba(0, 0, 0, .4);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        .addBox {
+            width: 726px;
+            height: 400px;
+            display: none;
+            #border> .all(6px,
+                    solid,
+                    #bcbcbc);
+            position: relative;
+            top: 50%;
+            left: 50%;
+            margin-left: -363px;
+            margin-top: -200px;
+            .newAddress {
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                background-color: #f7f7f7;
+                h3 {
+                    color: #444;
+                    font-size: 16px;
+                    margin: 0 26px;
+                }
+            }
+            .addForm {
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 40px;
+                bottom: 0;
+                letter-spacing: -1px;
+                .contentForm {
+                    padding: 20px 44px 27px;
+                    #border> .top();
+                    #border> .bottom();
+                    .userTel {
+                        #border> .bottom(1px,
+                                dotted,
+                                #d8d8d8);
+                    }
+                    .userAddress {
+                        padding-top: 12px;
+                    }
+                    p {
+                        margin-bottom: 12px;
+                        position: relative;
+                        &:after {
+                            content: "";
+                            height: 0;
+                            visibility: hidden;
+                            display: block;
+                            clear: both;
+                        }
+                        label {
+                            width: 82px;
+                            height: 28px;
+                            font: 16px SimHei;
+                            color: #333;
+                            text-align: right;
+                            float: left;
+                            line-height: 28px;
+                        }
+                        input {
+                            width: 200px;
+                            height: 28px;
+                            #border> .all();
+                            box-sizing: border-box;
+                            vertical-align: middle;
+                            padding: 6px 4px;
+                            float: left;
+                            &.xxdz {
+                                width: 486px;
+                            }
+                            &[type="checkbox"] {
+                                width: 12px;
+                                height: 12px;
+                                margin-top: 2px;
+                                border-radius: 3px;
+                            }
+                        }
+                        select {
+                            width: 158px;
+                            height: 28px;
+                            box-sizing: border-box;
+                            #border> .all();
+                        }
+                        i {
+                            color: @mainColor;
+                            position: absolute;
+                            top: 7px;
+                            &.yhxx {
+                                left: 10px;
+                            }
+                            &.szd {
+                                left: -2px;
+                            }
+                        }
+                        span {
+                            float: left;
+                            margin-left: 2px;
+                            font: 14px SimHei;
+                        }
+                        em {
+                            float: left;
+                            color: #b2b2b2;
+                        }
+                        &.mrdz {
+                            margin-top: 20px;
+                            margin-bottom: 38px;
+                        }
+                    }
+                }
+                .buttons {
+                    float: right;
+                    margin: 10px 36px;
+                    .submit {
+                        width: 100px;
+                        height: 32px;
+                        color: #fff;
+                        text-align: center;
+                        background-color: @mainColor;
+                        border: none;
+                        float: left;
+                        font-size: 16px;
+                        margin-right: 16px;
+                    }
+                    .cancel {
+                        width: 68px;
+                        height: 32px;
+                        float: left;
+                        background-color: #e2e2e2;
+                        text-align: center;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 我的收藏
+.wdsc {
+    .topbar {
+        width: 100%;
+        height: 42px;
+        #border> .all();
+        background-color: #fff;
+        line-height: 40px;
+        .titleLeft {
+            width: 140px;
+            float: left;
+            font-size: 16px;
+            text-align: center;
+            #border> .right(1px,
+                    dashed,
+                    #e2e2e2);
+            h3 {
+                font-size: 16px;
+                color: #666;
+            }
+        }
+        .titleRight {
+            float: left;
+            a {
+                margin-left: 28px;
+                &.active {
+                    color: @mainColor;
+                }
+            }
+        }
+    }
+    // 商品收藏
+    .collectList {
+        width: inherit;
+        display: none;
+        li {
+            float: left;
+            margin-right: 20px;
+            margin-top: 20px;
+            position: relative;
+            a {
+                width: 286px;
+                height: 370px;
+                display: block;
+                box-sizing: border-box;
+                #border> .all();
+                img {
+                    width: 284px;
+                    height: 286px;
+                }
+                .productDetail {
+                    padding: 14px 10px 0;
+                }
+                p {
+                    font: 12px SimHei; // margin-top: 15px; //     margin-left: 8px;
+                }
+                span {
+                    font-family: @numberFont;
+                }
+
+                .nowPrice {
+                    font-size: 42px; // margin-left: 10px;
+                    color: @mainColor;
+                    i {
+                        font-size: 12px;
+                    }
+                }
+                .beforePrice {
+                    font-szie: 12px;
+                    color: #bcbcbc;
+                }
+                .proIntr {
+                    margin-left: 48px;
+                    color: #bcbcbc;
+                }
+            }
+            &.soldOut {
+                .unShelve {
+                    width: 284px;
+                    height: 286px;
+                    background: url("../image/imgs/icon_xiajia.png") no-repeat center;
+                    position: absolute;
+                    top: 1px;
+                    left: 1px;
+                }
+            }
+        }
+    }
+    // 店铺收藏
+    .mystores {
+        width: inherit;
+        height: auto;
+        display: none;
+        .stores {
+            width: inherit;
+            height: 178px;
+            #border> .all();
+            background-color: #fff;
+            margin-top: 20px;
+            div {
+                float: left;
+            }
+            .storesLogo {
+                a {
+                    display: inline-block;
+                    height: 100%;
+                }
+            }
+            .storeProducts {
+                padding-left: 25px;
+                padding-right: 14px;
+            }
+            .productImages {
+                a {
+                    display: inline-block;
+                    margin: 14px 18px;
+                }
+            }
+        }
+    }
+    .collectNone {
+        width: inherit;
+        height: 240px;
+        #border> .all();
+        margin-top: 20px;
+        background-color: #fff;
+        position: relative;
+
+        .bq {
+            position: absolute;
+            top: 72px;
+            left: 252px;
+        }
+        .smdmy {
+            display: block;
+            width: 284px;
+            margin: 72px auto;
+        }
+        p {
+            font-size: 16px;
+            color: #5e5e5e;
+            font-weight: bold;
+            line-height: 32px;
+        }
+        span {
+            vertical-align: middle;
+        }
+        em {
+            vertical-align: middle;
+        }
+        a {
+            color: @mainColor;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+/* 注册 */
+
+@import url("mainCss.less");
+@import url("./reset.less");
+@import url("publicStyle.less");
+.logo-search {
+    border-bottom: 4px solid @mainColor;
+}
+
+.register {
+    width: 100%;
+    min-width: 1200px;
+    .register-c {
+        width: 980px;
+        // height: 546px;
+        margin: 20px auto;
+        border: 1px solid #e2e2e2;
+        background-color: #fff;
+        box-sizing: border-box;
+        .reg-top {
+            width: inherit;
+            height: 66px;
+            line-height: 66px;
+            padding: 0 50px;
+            border-bottom: inherit;
+            p {
+                font-size: 16px;
+                color: #5e5e5e;
+                &.reg-title {
+                    float: left;
+                }
+                &.ex-acc {
+                    float: right;
+                }
+                span {
+                    &.hd {
+                        color: @mainColor;
+                    }
+                    &.tips {
+                        font-size: 14px;
+                        color: #444;
+                    }
+                }
+                a {
+                    color: @mainColor;
+                }
+            }
+        }
+        .reg-form {
+            width: inherit;
+            padding: 30px 126px 0 82px;
+            form {
+                width: 450px;
+                float: left;
+                ul {
+                    li {
+                        width: inherit;
+                        height: 40px;
+                        margin-bottom: 30px;
+                        position: relative;
+                        &:after {
+                            content: "";
+                            height: 0;
+                            display: block;
+                            clear: both;
+                            visibility: hidden;
+                        }
+                        label {
+                            width: 80px;
+                            text-align: right;
+                            font-size: 16px;
+                            color: #444;
+                            padding: 12px 0;
+                            float: left;
+                        }
+                        input {
+                            height: 40px;
+                            border: 1px solid #d7d7d7;
+                            border-radius: 4px;
+                            float: left;
+                            &[type="text"],
+                            &[type="password"] {
+                                width: 262px;
+                                padding: 10px 7px;
+                            }
+                            &#mess_code {
+                                width: 142px;
+                            }
+                            &[type="button"] {
+                                width: 110px;
+                                margin-left: 10px;
+                                color: #bcbcbc;
+                                cursor: pointer;
+                            }
+                            &:focus {
+                                border-color: #999;
+                            }
+                            &[type="submit"] {
+                                width: 262px;
+                                color: #fff;
+                                margin-bottom: 86px;
+                                background-color: @mainColor;
+                                &:hover {
+                                    background-color: #f96969;
+                                }
+                            }
+                        }
+                        .hint {
+                            float: left;
+                            i {
+                                width: 16px;
+                                height: 16px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin: 12px 0 12px 10px;
+                                &.correct {
+                                    background: url("../image/icon/icon_zhengque.png") no-repeat center;
+                                }
+                                &.error {
+                                    background: url("../image/icon/icon_cuowu.png") no-repeat center;
+                                }
+                            }
+                            p {
+                                position: absolute;
+                                left: 84px;
+                                bottom: -22px;
+                                display: none;
+                            }
+                            &+span {
+                                height: inherit;
+                                line-height: 40px;
+                                float: right;
+                                a {
+                                    color: @mainColor;
+                                }
+                            }
+                        }
+                        .complex-pwd {
+                            width: inherit;
+                            float: left;
+                            padding: 8px 80px;
+                            span {
+                                float: left;
+                                width: 50px;
+                                height: 14px;
+                                margin-right: 10px;
+                                background-color: #c6c6c6;
+                                &.com {
+                                    background-color: @mainColor;
+                                }
+                            }
+                            em {
+                                float: left;
+                                color: @mainColor;
+                            }
+                        }
+                        &.agreement {
+                            height: auto;
+                            label {
+                                width: auto;
+                                padding: 0;
+                                margin-left: 80px;
+                                font-size: 14px;
+                                font-weight: bold;
+                                input {
+                                    height: auto;
+                                    border: none;
+                                    margin-top: 1px;
+                                }
+                                strong {
+                                    float: left;
+                                }
+                                a {
+                                    float: left;
+                                    text-decoration: underline;
+                                    &:hover {
+                                        color: @mainColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            ol {
+                &.partner {
+                    float: right;
+                    li {
+                        height: 30px;
+                        line-height: 30px;
+                        margin-bottom: 25px;
+                        h3 {
+                            font-size: 16px;
+                            color: #444;
+                        }
+                        i {
+                            float: left;
+                            width: 30px;
+                            height: inherit;
+                            margin-right: 16px;
+                            vertical-align: middle;
+                            &.taobao {
+                                background: url("../image/icon/taobao_large.png") no-repeat center;
+                            }
+                            &.qq {
+                                background: url("../image/icon/QQ_large.png") no-repeat center;
+                            }
+                            &.wechat {
+                                background: url("../image/icon/wechat_large.png") no-repeat center;
+                            }
+                            &.weibo {
+                                background: url("../image/icon/weibo_large.png") no-repeat center;
+                            }
+                        }
+                        a {
+                            &:hover {
+                                color: @mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

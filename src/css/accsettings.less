@@ -1,0 +1,1096 @@
+/* 个人中心 */
+@import url("mainCss.less");
+@import url("./reset.less");
+@import url("publicStyle.less");
+
+/* 账号设置 */
+
+.accsettings {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  .settings {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    .asidebar {
+      width: 206px;
+      height: 302px;
+      float: left;
+      background-color: #fff;
+      border: 1px solid #e2e2e2;
+      padding-top: 7px;
+      h3 {
+        height: 64px;
+        color: @mainColor;
+        line-height: 64px;
+        padding-left: 40px;
+        font-weight: bold;
+      }
+      ul {
+        padding: 0 27px;
+        li {
+          a {
+            width: 150px;
+            height: 30px;
+            display: block;
+            box-sizing: border-box;
+            border-radius: 4px;
+            line-height: 30px;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            i {
+              color: #333;
+              font-weight: bold;
+              float: left;
+            }
+            em {
+              float: right;
+            }
+            &:hover,
+            &.active {
+              background-color: @mainColor;
+              i,
+              em {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.article {
+  width: 982px;
+  float: right;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  label {
+    width: 82px;
+    height: 40px;
+    display: inline-block;
+    text-align: right;
+    line-height: 40px;
+    color: #444;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  input[type="text"] {
+    width: 260px;
+    height: 40px;
+    border: 1px solid #e2e2e2;
+    padding: 12px 4px;
+  }
+  .getMessage {
+    padding: 0 4px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    color: #444;
+    background-color: #e2e2e2;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  //账号设置
+  .zhsetting {
+    height: 456px;
+    .title {
+      width: 100%;
+      h3 {
+        width: 942px;
+        height: 46px;
+        line-height: 46px;
+        margin: 0 auto;
+        padding-left: 14px;
+        font-size: 16px;
+        //font-weight: 600;
+        border-bottom: 1px solid #e2e2e2;
+      }
+    }
+    .content {
+      width: 100%;
+      padding-left: 168px;
+      padding-top: 60px;
+      position: relative;
+      .head-photo {
+        width: 86px;
+        height: 86px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 86px;
+        overflow: hidden;
+        background-color: #bcbcbc;
+        position: absolute;
+        left: 44px;
+        top: 50px;
+        img {
+          display: none;
+        }
+        i {
+          font: 14px SimHei;
+          color: #fff;
+        }
+      }
+      P {
+        margin-bottom: 20px;
+        line-height: 28px;
+        &:after {
+          content: "";
+          height: 0;
+          display: block;
+          overflow: hidden;
+          clear: both;
+        }
+        i.hint {
+          //width: 410px;
+          height: 50px;
+          display: block;
+          font: 14px/50px SimHei;
+          color: @mainColor;
+        }
+        em.hint {
+          font: 14px SimHei;
+          color: #bcbcbc;
+          margin-left: 10px;
+        }
+        label {
+          width: 56px;
+          float: left;
+          font: 12px/28px SimHei;
+          text-align: right;
+        }
+        input {
+          &#username {
+            width: 200px;
+            height: 28px;
+            float: left;
+            padding: 4px;
+            //border: 1px solid #e2e2e2;
+            border-radius: 4px;
+          }
+        }
+        span {
+          display: block;
+          float: left;
+          line-height: 28px;
+          vertical-align: middle;
+          &.mm {
+            margin-left: 10px;
+          }
+          em {
+            //float: left;
+            margin: 0 4px;
+          }
+        }
+        select {
+          width: 58px;
+          //height: 26px;
+          height: 26px;
+          float: left;
+          margin: 1px 0;
+          line-height: 26px;
+        }
+        a {
+          width: 132px;
+          height: 40px;
+          display: block;
+          line-height: 40px;
+          text-align: center;
+          color: #fff;
+          background-color: @mainColor;
+          border-radius: 4px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  //安全中心
+  .safecenter {
+    h3 {
+      font-size: 16px;
+      margin: 14px 34px;
+    }
+    div {
+      margin-left: 50px;
+      margin-bottom: 10px;
+      height: 16px;
+      label {
+        width: auto;
+        height: auto;
+        line-height: normal;
+        float: left;
+        em {
+          color: @mainColor;
+          font-weight: inherit;;
+        }
+      }
+      p {
+        width: 450px;
+        height: 16px;
+        background-color: #e5e5e5;
+        float: left;
+        margin-left: 10px;
+        span {
+          display: block;
+          width: 246px;
+          height: inherit;
+          background-color: @mainColor;
+        }
+      }
+    }
+    ul {
+      width: 942px;
+      margin: 0 auto;
+      li {
+        width: inherit;
+        height: 94px;
+        padding: 32px 152px 32px 44px;
+        border-bottom: 1px solid #e2e2e2;
+        &.last {
+          border-bottom: none;
+        }
+        p {
+          width: inherit;
+          height: 30px;
+          line-height: 30px;
+          i {
+            width: 30px;
+            height: inherit;
+            display: inline-block;
+            float: left;
+            &.currect {
+              background: url("../image/icon/icon_correct.png") no-repeat center;
+            }
+            &.warning {
+              background: url("../image/icon/icon_warning.png") no-repeat center;
+            }
+          }
+          label {
+            width: 140px;
+            height: inherit;
+            line-height: inherit;
+            text-align: center;
+            border-right: 1px solid #e2e2e2;
+            font-size: 18px;
+            vertical-align: inherit;
+          }
+          span {
+            margin-left: 34px;
+            &.warning {
+              color: @mainColor;
+            }
+          }
+          a {
+            width: 76px;
+            height: 24px;
+            display: block;
+            float: right;
+            color: #444;
+            text-align: center;
+            line-height: 24px;
+            margin-right: 152px;
+            background-color: #f1f9eb;
+            border: 1px solid #bfd6af;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+  //修改密码
+  .change-pwd {
+    h3 {
+      height: 44px;
+      line-height: 44px;
+      font-weight: bold;
+      padding: 0 14px;
+      margin: 0 20px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+    ul {
+      //margin: 0 470px 90px 48px;
+      margin-left: 48px;
+      li {
+        margin-bottom: 36px;
+        position: relative;
+        &.adivce {
+          margin-bottom: 0;
+        }
+        p {
+          line-height: 50px;
+          .bt {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .ts {
+            color: #999;
+            margin-left: 7px;
+          }
+        }
+        label {
+          //width: 80px;
+          //height: 40px;
+          //line-height: 40px;
+          //text-align: right;
+          //display: inline-block;
+          font-size: 16px;
+          font-weight: normal;
+          //color: #444;
+          //vertical-align: middle;
+        }
+        input {
+          //width: 260px;
+          //height: 40px;
+          //border: 1px solid #e2e2e2;
+          //padding: 12px 4px;
+          &.messageCode {
+            width: 142px;
+          }
+        }
+        i {
+          color: #999;
+          position: absolute;
+          left: 80px;
+          bottom: -22px;
+        }
+        a {
+          display: inline-block;
+          &.getCode {
+            width: 110px;
+            height: 40px;
+            background-color: #e2e2e2;
+            color: #444;
+            line-height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            margin-left: 6px;
+          }
+          &.submit {
+            width: 260px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            color: #fff;
+            background-color: @mainColor;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  //邮箱验证
+  .email {
+    margin: 0 20px;
+    height: 256px;
+    p {
+      &.title {
+        padding-left: 26px;
+        line-height: 50px;
+        .bt {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .ts {
+          color: #999;
+          margin-left: 7px;
+        }
+      }
+    }
+    .send-email {
+      //margin-bottom: 108px;
+      p {
+        padding-left: 58px;
+        margin-top: 16px;
+        label {
+          font-size: 16px;
+          //color: #444;
+          margin: 12px 0;
+          font-weight: normal;
+          //vertical-align: middle;
+        }
+        #email {
+          width: 260px;
+          height: 40px;
+          border: 1px solid #e2e2e2;
+          vertical-align: middle;
+        }
+        a {
+          &.submit {
+            width: 90px;
+            height: 26px;
+            color: #fff;
+            text-align: center;
+            line-height: 26px;
+            background-color: @mainColor;
+            border: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 16px;
+            //margin-left: 74px;
+          }
+        }
+      }
+    }
+  }
+  .yx-verify {
+    p {
+      margin-bottom: 12px;
+    }
+    .get-code {
+      margin-bottom: 0;
+      p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #5e5e5e;
+        &.yjfs {
+          color: #000;
+          position: relative;
+          //font-weight: 600;
+          i {
+            width: 16px;
+            height: 16px;
+            float: left;
+            background: url("../image/icon/icon_zhengque.png") no-repeat center;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 34px;
+          }
+          span {
+            vertical-align: middle;
+          }
+        }
+        &.tj {
+          margin-bottom: 30px;
+        }
+        span {
+          vertical-align: middle;
+        }
+        .send_again {
+          width: 80px;
+          height: 28px;
+          display: inline-block;
+          line-height: 28px;
+          text-align: center;
+          background-color: #f3f3f4;
+          border: 1px solid #e2e2e2;
+          color: #444;
+          vertical-align: middle;
+          box-sizing: border-box;
+        }
+        input {
+          width: 80px;
+          height: 28px;
+          border: 1px solid #e2e2e2;
+          vertical-align: middle;
+          padding: 7px 4px;
+        }
+        a.submit {
+          margin-top: 15px;
+          margin-left: 200px;
+        }
+      }
+    }
+  }
+  //手机号码修改
+  .xgsj {
+    height: 255px;
+    .title {
+      a {
+        color: @mainColor;
+        margin-left: 6px;
+      }
+    }
+    form {
+      p {
+        &.oldTel {
+          label {
+            margin: 0;
+          }
+          input {
+          }
+          a {
+            &.next {
+              width: 260px;
+              height: 40px;
+              display: inline-block;
+              color: #fff;
+              background-color: @mainColor;
+              text-align: center;
+              line-height: 40px;
+              border-radius: 4px;
+            }
+          }
+          .oldNum {
+            width: 260px;
+            height: 40px;
+            color: #999;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid #e2e2e2;
+            padding: 12px 4px;
+          }
+        }
+      }
+    }
+  }
+  .bindnewTel {
+    height: 355px;
+  }
+  //支付密码
+  .paycode {
+    form {
+      p {
+        padding-left: 26px;
+        margin-top: 30px;
+        span {
+          color: #444;
+        }
+        em {
+          font-weight: bold;
+        }
+        label {
+          font-weight: normal;
+          margin-left: 16px;
+        }
+        .next {
+          width: 260px;
+          height: 40px;
+          color: #fff;
+          display: inline-block;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 4px;
+          background-color: @mainColor;
+        }
+      }
+    }
+  }
+  .paypwd {
+    form {
+      div {
+        margin-bottom: 12px;
+        position: relative;
+        label {
+          width: 132px;
+          float: left;
+          z-index: 1000;
+          font-weight: normal;
+        }
+        span {
+          width: 236px;
+          height: 40px;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 132px;
+          overflow: hidden;
+          input {
+            width: 400px;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: -132px;
+            //left: 0;
+            //visibility: hidden;
+            opacity: 0;
+            filter: Alpha(Opacity=0);
+            //z-index: 999;
+          }
+        }
+        p {
+          width: 235px;
+          float: left;
+          z-index: 0;
+          i {
+            width: 38px;
+            height: 38px;
+            display: inline-block;
+            border: 1px solid #e2e2e2;
+            border-right: none;
+            float: left;
+            &.last {
+              border-right: 1px solid #e2e2e2;
+            }
+            &.active {
+              background: url("../image/icon/password-blink.gif") no-repeat center;
+            }
+            b {
+              width: 8px;
+              height: 8px;
+              display: block;
+              margin: 15px auto;
+              font-weight: bold;
+              background: url("../image/icon/passeord-dot.png") no-repeat center;
+              visibility: hidden;
+            }
+          }
+        }
+        a {
+          width: 110px;
+          height: 40px;
+          display: block;
+          text-align: center;
+          float: left;
+          line-height: 40px;
+          color: #444;
+          background-color: #e2e2e2;
+          border-radius: 4px;
+          margin-left: 62px;
+          &:hover {
+            background-color: @mainColor;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  //提现账号
+  .cashAccount {
+    height: auto;
+    .cashSetting {
+      padding-left: 80px;
+      padding-top: 24px;
+      padding-bottom: 100px;
+      font-family: SimHei;
+      .alipay-title {
+        i {
+          width: 170px;
+          height: 42px;
+          display: inline-block;
+          background: url("../image/imgs/alipay.png") no-repeat center;
+          vertical-align: middle;
+        }
+        span {
+          line-height: 40px;
+          display: inline-block;
+          font: 14px SimHei;
+          color: #999;
+          margin-left: 20px;
+          vertical-align: middle;
+        }
+      }
+      .addAlipay {
+        h3 {
+          font: 16px SimHei;
+          color: #444;
+          margin-top: 20px;
+        }
+        p {
+          &.role {
+            margin-top: 20px;
+            color: #999;
+            line-height: 20px;
+          }
+        }
+      }
+      .bankCard {
+        margin-top: 48px;
+        h2 {
+          i {
+            width: 26px;
+            height: 16px;
+            display: inline-block;
+            background: url("../image/icon/Card.png") no-repeat center;
+            vertical-align: middle;
+          }
+          em {
+            font: 14px SimHei;
+            margin-left: 10px;
+            vertical-align: middle;
+          }
+          span {
+            font: 14px SimHei;
+            color: #999;
+            margin-left: 10px;
+          }
+        }
+        p {
+          &.bc-detail {
+            font-size: 16px;
+            margin-top: 42px;
+          }
+        }
+      }
+      .add {
+        a {
+          width: 92px;
+          height: 28px;
+          display: inline-block;
+          color: #fff;
+          background-color: @mainColor;
+          text-align: center;
+          line-height: 28px;
+          border-radius: 4px;
+          margin-top: 20px;
+        }
+        span {
+          i {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background: url("../image/icon/icon_jingao.png") no-repeat center;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+          em {
+            color: #ff6900;
+            vertical-align: middle;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  //绑定支付宝
+  .bindAlipayPage {
+    padding-top: 45px;
+    padding-left: 50px;
+    .zfb {
+      margin-bottom: 22px;
+      a {
+        em {
+          font-family: SimHei;
+          color: #444;
+          font-weight: 500;
+        }
+        span {
+          font-family: SimHei;
+          color: #999;
+          margin-left: 10px;
+        }
+      }
+    }
+    .info {
+      li {
+        line-height: 28px;
+        margin-bottom: 37px;
+        position: relative;
+        label {
+          width: 100px;
+          height: 28px;
+          line-height: 28px;
+          font-family: SimHei;
+          color: #444;
+          font-weight: normal;
+        }
+        input {
+          height: 28px;
+          padding: 6px 4px;
+          &.username {
+            width: 92px;
+          }
+          &.account {
+            width: 150px;
+          }
+          &.telCode {
+            width: 80px;
+          }
+        }
+        s {
+          margin-left: 10px;
+          color: @mainColor;
+          font-family: SimHei;
+          font-weight: bold;
+          text-decoration: none;
+          vertical-align: middle;
+        }
+        a {
+          &.getMessage {
+            width: 80px;
+            height: 28px;
+            line-height: 26px !important;
+            font: bold 14px SimHei;
+            margin-left: 4px;
+            box-sizing: border-box;
+            border: 1px solid #e2e2e2;
+            padding: 0;
+            text-align: center;
+            filter: ~"progid: DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff, endcolorstr=#e8e8e8, gradientType=0)";
+            background: linear-gradient(#fff, #e8e8e8);
+          }
+          &.edit {
+            margin-left: 5px;
+            font: 14px SimHei;
+            color: #5087ca;
+          }
+          &.save {
+            width: 260px;
+            height: 40px;
+            display: inline-block;
+            font-family: SimHei;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            background-color: @mainColor;
+            border-radius: 4px;
+          }
+        }
+        i {
+          color: #999;
+          position: absolute;
+          top: 28px;
+          left: 100px;
+          letter-spacing: -1px;
+        }
+      }
+    }
+    .warning {
+      margin: -20px auto 36px -20px;
+      //margin-bottom: 36px;
+      //margin-left: -30px;
+      i {
+        width: 16px;
+        height: 16px;
+        float: left;
+        background: url("../image/icon/icon_jingao.png") no-repeat center;
+      }
+      span {
+        font-family: SimHei;
+        color: #ff6900;
+        float: left;
+        margin-left: 5px;
+      }
+    }
+    .addBankCardLink {
+      height: 84px;
+      margin-right: 308px;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 76px;
+      margin-left: -50px;
+      line-height: 84px;
+      a {
+        margin-left: 50px;
+        display: block;
+        font-family: SimHei;
+        em {
+          color: #444;
+          font-weight: bold;
+        }
+        span {
+          margin-left: 10px;
+          color: #999;
+        }
+        &:hover {
+          em {
+            color: @mainColor;
+          }
+        }
+      }
+    }
+  }
+  //绑定银行卡
+  .bindCardPage {
+    padding-right: 308px;
+    .addAlipayLink {
+      height: 94px;
+      line-height: 94px;
+      padding-left: 50px;
+      border-bottom: 1px solid #e2e2e2;
+      a {
+        font-family: SimHei;
+        em {
+          color: #444;
+          font-weight: bold;
+        }
+        span {
+          color: #999;
+          margin-left: 10px;
+        }
+        &:hover {
+          em {
+            color: @mainColor;
+          }
+        }
+      }
+    }
+    .bindCard {
+      padding-top: 35px;
+      padding-left: 42px;
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 75px;
+      .bindCard-title {
+        margin-bottom: 20px;
+        a {
+          font-family: SimHei;
+          em {
+            color: #444;
+            font-weight: bold;
+          }
+          span {
+            color: #999;
+            margin-left: 10px;
+          }
+        }
+      }
+      ul {
+        li {
+          height: 28px;
+          margin-bottom: 38px;
+          letter-spacing: -1px;
+          position: relative;
+          label {
+            width: 106px;
+            height: 28px;
+            line-height: 28px;
+            font-weight: normal;
+            float: left;
+          }
+          input {
+            height: 28px;
+            padding: 6px 4px;
+            float: left;
+            &.payee {
+              width: 92px;
+            }
+            &.cityLive,
+            &.cardNum {
+              width: 210px;
+            }
+            &.messageCode {
+              width: 80px;
+            }
+          }
+          .bankName {
+            width: 160px;
+            height: 26px;
+            text-align: center;
+            float: left;
+            font-weight: bold;
+            &:focus {
+              outline: none;
+            }
+          }
+          .getMessage {
+            width: 80px;
+            height: 28px;
+            padding: 0;
+            line-height: 28px;
+            box-sizing: border-box;
+            border: 1px solid #e2e2e2;
+            filter: ~"progid: DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff, endcolorstr=#e8e8e8, gradientType=0)";
+            background: linear-gradient(#fff, #e8e8e8);
+          }
+          .save {
+            width: 260px;
+            height: 40px;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            font-family: SimHei;
+            background-color: @mainColor;
+            border-radius: 4px;
+          }
+          span,
+          em {
+            color: #999;
+            position: absolute;
+            top: 32px;
+            left: 106px;
+          }
+          strong {
+            font-weight: normal;
+          }
+          .edit {
+            color: #5087ca;
+            margin-left: 10px;
+          }
+          s {
+            color: @mainColor;
+            text-decoration: none;
+            float: left;
+            margin: 6px;
+          }
+        }
+      }
+      .warning {
+        margin: -15px auto 36px -20px;
+        i {
+          width: 16px;
+          height: 16px;
+          display: block;
+          float: left;
+          background: url("../image/icon/icon_jingao.png") no-repeat center;
+        }
+        span {
+          color: #ff6900;
+          margin-left: 10px;
+          float: left;
+        }
+      }
+    }
+  }
+  //绑定第三方账号
+  .bindother {
+    padding: 0 20px;
+    h3 {
+      height: 44px;
+      line-height: 44px;
+      font-size: 16px;
+      color: #666;
+      font-weight: bold;
+      padding-left: 16px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+    .otherAccount {
+      padding-left: 37px;
+      padding-top: 38px;
+      .hint {
+        color: #999;
+        margin-bottom: 34px;
+      }
+      ul {
+        padding-left: 32px;
+        margin-bottom: 176px;
+        li {
+          float: left;
+          margin: 0 38px;
+          position: relative;
+          div {
+            width: 76px;
+            height: 68px;
+            margin-bottom: 10px;
+            &.QQ {
+              background: url("../image/icon/icon_QQ.png") no-repeat center;
+            }
+            &.taobao {
+              background: url("../image/icon/icon_taobao.png") no-repeat center;
+            }
+            &.weibo {
+              background: url("../image/icon/icon_weibo.png") no-repeat center;
+            }
+            &.wechat {
+              background: url("../image/icon/icon_wechat.png") no-repeat center;
+            }
+          }
+          p {
+            text-align: center;
+            margin-bottom: 8px;
+          }
+          a {
+            height: 30px;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            background-color: @mainColor;
+            border-radius: 2px;
+          }
+          em {
+            height: 26px;
+            display: block;
+            border-right: 1px dashed #bcbcbc;
+            position: absolute;
+            top: 20px;
+            right: -38px;
+          }
+        }
+      }
+    }
+  }
+}

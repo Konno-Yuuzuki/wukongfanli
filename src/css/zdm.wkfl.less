@@ -1,0 +1,456 @@
+@import url("./reset.less");
+@import url("./publicStyle.less");
+
+/*值得买*/
+
+/*导航栏*/
+
+.nav {
+    .nav-c {
+        padding-left: 0;
+        ul {
+            li {
+                a {
+                    width: 114px;
+                    text-align: center;
+                    margin: 0;
+                }
+                &.active {
+                    a {
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                        background-color: @mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainContent {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*bannar*/
+
+.bannar {
+    .side {
+        img {
+            width: 1200px;
+            height: 350px;
+        }
+    }
+}
+
+// 类别
+.zdm-fl {
+    width: 100%;
+    margin-top: 20px;
+    .topSide {
+        margin-right: -16px;
+        div {
+            float: left;
+            margin-right: 16px;
+        }
+        a {
+            width: 288px;
+            height: 60px;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+            display: block;
+            border-radius: 6px;
+            background-color: @mainColor;
+            &:hover {
+                background-color: #f96969;
+            }
+        }
+    }
+}
+
+/*板块标题*/
+.zdm-jx-title {
+    width: 100%;
+    margin-bottom: 14px;
+    h1 {
+        font-size: 30px;
+        color: #444;
+        padding: 0 14px;
+        border-left: 4px solid @mainColor;
+    }
+}
+
+/*icons*/
+.icons {
+    width: 100%;
+    margin-top: 16px;
+    div {
+        float: left;
+        margin-right: 16px;
+        &.go-link {
+            float: right;
+            margin-left: 13px;
+            a {
+                font-size: 14px;
+                color: @mainColor;
+            }
+        }
+    }
+    i {
+        width: 16px;
+        height: 15px;
+        display: inline-block;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    span {
+        vertical-align: middle;
+        color: #ccc;
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .praise {
+        i {
+            background: url("../image/icon/preview_unlike_icon-2.png") no-repeat center;
+        }
+        .selected {
+            background: url("../image/icon/preview_unlike_icon.png") no-repeat center;
+        }
+    }
+    .trample {
+        i {
+            background: url("../image/icon/preview_unlike_icon (2).png") no-repeat center;
+        }
+        .selected {
+            background: url("../image/icon/preview_unlike_icon_copy3.png") no-repeat center;
+        }
+    }
+    .comment {
+        i {
+            background: url("../image/icon/message.png") no-repeat center;
+        }
+    }
+    .collection {
+        i {
+            background: url("../image/icon/Favs.png") no-repeat center;
+        }
+        .selected {
+            background: url("../image/icon/Favs-selected.png") no-repeat center;
+        }
+    }
+}
+
+/*值得买精选*/
+
+.zdm-hd {
+    width: 100%;
+    margin-top: 20px;
+    .zdm-jx-goods {
+        width: 100%;
+        //height: 242px;
+        height: auto;
+        background-color: #fff;
+        padding-top: 20px;
+        padding-bottom: 14px;
+        li {
+            float: left;
+            margin-left: 14px;
+
+            a {
+                display: block;
+                h2 {
+                    font-size: 22px;
+                    color: #444;
+                    font-weight: 700;
+                }
+                p {
+                    width: 100%;
+                    font-size: 14px;
+                    color: #444;
+                    font-weight: 700;
+                    margin-top: 4px;
+                    white-space: nowrap;
+                }
+                img {
+                    width: 220px;
+                    height: 158px;
+                    margin-top: 10px;
+                }
+            }
+            &.jx-once {
+                margin-right: 16px;
+                a {
+                    img {
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zdm-sp {
+    margin-top: 20px;
+    .zdm-fl {
+        width: 100%;
+        border-bottom: 1px solid @mainColor;
+        position: relative;
+        li {
+            float: left;
+            a {
+                width: 98px;
+                height: 50px;
+                display: block;
+                color: #444;
+                font-size: 18px;
+                text-align: center;
+                line-height: 50px;
+            }
+            &.active,
+            &:hover {
+                a {
+                    color: #fff;
+                    background-color: @mainColor;
+                }
+            }
+        }
+        .ckgd {
+            width: 130px;
+            height: 21px;
+            float: right;
+            text-align: center;
+            color: #fff;
+            line-height: 21px;
+            background: url("../image/icon/watch_more_bg.png");
+            position: absolute;
+            bottom: -1px;
+            right: 20px;
+        }
+    }
+    .zdm-fl-sp {
+        background-color: #fff;
+        padding-top: 14px;
+        .fl-sp {
+            width: 888px;
+            float: left;
+            li {
+                float: left;
+                .fl-list {
+                    display: block;
+                    width: 422px;
+                    height: 118px;
+                    float: left;
+                    border: 1px solid #e5e5e5;
+                    box-sizing: border-box;
+                    padding: 4px 4px 4px 112px;
+                    margin-left: 14px;
+                    margin-bottom: 14px;
+                    position: relative;
+                    a {
+                        display: block;
+                    }
+                    img {
+                        width: 108px;
+                        height: 108px;
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                    }
+                    .sp-xq {
+                        margin-left: 5px;
+                        h3 {
+                            width: 244px;
+                            height: 50px;
+                            font-size: 14px;
+                            color: #444;
+                            font-weight: bold;
+                            margin-top: 4px;
+                        }
+                        p {
+                            font-size: 14px;
+                            color: @mainColor;
+                            font-family: @numberFont;
+                        }
+
+                    }
+                }
+            }
+        }
+        .sp-xc {
+            float: right;
+            margin-right: 16px;
+            img {
+                width: 296px;
+                height: 248px;
+            }
+        }
+    }
+}
+
+/*值得买百科*/
+.zdm-bk {
+    width: 100%;
+    margin-top: 30px;
+    .zdm-bk-list {
+        background-color: #fff;
+    }
+    .zdm-bk-list {
+        width: 100%;
+        height: 202px;
+        padding: 20px 42px 16px 264px;
+        border-bottom: 2px solid #f2f2f2;
+        position: relative;
+        img {
+            width: 220px;
+            height: 170px;
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+        .zdm-ls-nr {
+            h1 {
+                font-size: 24px;
+                color: #444;
+                margin-top: 8px;
+            }
+            p {
+                margin-top: 12px;
+                color: #bcbcbc;
+                font-size: 16px;
+                line-height: 30px;
+                a {
+                    color: inherit;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .zdm-ls-icons {
+            width: auto;
+            position: absolute;
+            bottom: 16px;
+            left: 264px;
+        }
+    }
+    .watch-more {
+        width: 100%;
+        height: 40px;
+        a {
+            width: 100%;
+            height: inherit;
+            display: block;
+            color: @mainColor;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            background-color: #fdecec;
+        }
+    }
+}
+
+/*值得买海淘*/
+.zdm-ht {
+    width: 100%;
+    margin-top: 20px;
+    .zdm-ht-list {
+        .ckgd {
+            width: 100%;
+            height: 1px;
+            background-color: @mainColor;
+            position: relative;
+            a {
+                width: 130px;
+                height: 21px;
+                color: #fff;
+                text-align: center;
+                line-height: 21px;
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                right: 20px;
+                background: url("../image/icon/watch_more_bg.png") center no-repeat;
+                &:hover{
+
+                }
+            }
+        }
+        ul {
+            margin-right: -20px;
+        }
+        li {
+            width: 285px;
+            float: left;
+            margin-right: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            a {
+                display: block;
+            }
+            .J_sp_image {
+                img {
+                    width: 285px;
+                    height: 284px;
+                }
+            }
+            .J_sp_detail {
+                height: 94px;
+                padding: 10px 10px 0;
+                p {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                .J_sp_price {
+                    div {
+                        float: left;
+                    }
+                    .sp_price {
+                        color: @mainColor;
+                        font-family: @numberFont;
+                        em {
+                            font-size: 18px;
+                        }
+                        span {
+                            width: 42px;
+                            height: 28px;
+                            font-size: 36px;
+                        }
+                    }
+                    .tip {
+                        width: 68px;
+                        height: 24px;
+                        font-size: 20px;
+                        color: @mainColor;
+                        font-family: "DroidSansFallback";
+                        text-align: center;
+                        line-height: 22px;
+                        border: 1px solid @mainColor;
+                        border-radius: 4px;
+                        margin-left: 6px;
+                        margin-top: 16px;
+                    }
+                    .readySell {
+                        float: right;
+                        text-align: right;
+                        margin-top: 6px;
+                        i {
+                            width: 16px;
+                            height: 16px;
+                            display: inline-block;
+                            background: url("../image/icon/c086f236fabf61d6.png") no-repeat center;
+                        }
+                        span {
+                            display: block;
+                            color: #bcbcbc;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}

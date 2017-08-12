@@ -1,0 +1,148 @@
+@import url("mainCss.less");
+@import url("./reset.less");
+@import url("publicStyle.less");
+
+.logo-search {
+  box-sizing: border-box;
+  padding-bottom: 0;
+  border-bottom: 4px solid @mainColor;
+}
+
+/*登录界面*/
+.login-module {
+  width: 100%;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+  .login-con {
+    width: 980px;
+    height: 456px;
+    margin: 20px auto;
+    border: 1px solid #e2e2e2;
+    background: url("../image/imgs/login-background.jpg") no-repeat center;
+    .login-up {
+      width: 100%;
+      height: 66px;
+      border-bottom: 1px solid #e2e2e2;
+      h3 {
+        margin: 0px 50px;
+        line-height: 66px;
+        span {
+          em {
+            color: @mainColor;
+            & + i {
+              font-size: 14px;
+            }
+          }
+          a {
+            color: @mainColor;
+
+          }
+          &.register {
+            float: right;
+          }
+        }
+      }
+    }
+    .login-down {
+      width: 100%;
+      height: 390px;
+      form {
+        width: 272px;
+        height: auto;
+        margin-left: 160px;
+        div {
+          width: inherit;
+          input {
+            &[type="text"],
+            &[type="password"] {
+              width: inherit;
+              height: 40px;
+              box-sizing: border-box;
+              font-size: 16px;
+              border: 1px solid #d4d4d4;
+              border-radius: 4px;
+              margin-top: 30px;
+              padding: 10px 7px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          & + div + div {
+            margin-top: 34px;
+            input[type="checkbox"] {
+              margin-right: 6px;
+              vertical-align: middle;
+              text-align: start;
+              cursor: pointer;
+            }
+            label {
+              vertical-align: middle;
+            }
+            a {
+              float: right;
+              color: #999;
+            }
+            & + div {
+              margin-top: 12px;
+              input[type="submit"] {
+                width: inherit;
+                height: 40px;
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                background-color: @mainColor;
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        margin-top: 50px;
+        margin-left: 160px;
+        .coo-account {
+          //width: 272px;
+          p {
+            font-size: 14px;
+            color: #444;
+            //font-weight: bold;
+          }
+          ul {
+            margin-top: 10px;
+            li {
+              float: left;
+              margin-right: 16px;
+              a {
+                display: block;
+                font-size: 12px;
+                i {
+                  width: 28px;
+                  height: 27px;
+                  display: inline-block;
+                  vertical-align: middle;
+                  &.taobao {
+                    background: url("../image/icon/taobao.png") no-repeat center;
+                  }
+                  &.qq {
+                    background: url("../image/icon/QQ.png") no-repeat center;
+                  }
+                  &.wechat {
+                    background: url("../image/icon/wechat.png") no-repeat center;
+                  }
+                  &.weibo {
+                    background: url("../image/icon/weibo.png") no-repeat center;
+                  }
+                }
+                em {
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

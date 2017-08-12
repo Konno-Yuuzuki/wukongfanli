@@ -1,0 +1,22 @@
+{
+  "name": "mytemplate",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "heikki606 <heikki606@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.12.4",
+    "art-template": "^4.12.1"
+  },
+  "devDependencies": {}
+}
