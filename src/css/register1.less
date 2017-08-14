@@ -11,8 +11,7 @@
     width: 100%;
     min-width: 1200px;
     .register-c {
-        width: 980px;
-        // height: 546px;
+        width: 980px; // height: 546px;
         margin: 20px auto;
         border: 1px solid #e2e2e2;
         background-color: #fff;
@@ -49,7 +48,7 @@
         .reg-form {
             width: inherit;
             padding: 30px 126px 0 82px;
-            form {
+            .formRegister {
                 width: 450px;
                 float: left;
                 ul {
@@ -78,7 +77,7 @@
                             border: 1px solid #d7d7d7;
                             border-radius: 4px;
                             float: left;
-                            &[type="text"],
+                            &[type="number"],
                             &[type="password"] {
                                 width: 262px;
                                 padding: 10px 7px;
@@ -104,9 +103,16 @@
                                     background-color: #f96969;
                                 }
                             }
+                            &:-webkit-autofill {
+                                background-color: #fff;
+                            }
+                            &.error {
+                                border-color: @mainColor;
+                            }
                         }
                         .hint {
                             float: left;
+                            display: none;
                             i {
                                 width: 16px;
                                 height: 16px;
@@ -124,7 +130,7 @@
                                 position: absolute;
                                 left: 84px;
                                 bottom: -22px;
-                                display: none;
+                                color: @mainColor;
                             }
                             &+span {
                                 height: inherit;
@@ -139,6 +145,7 @@
                             width: inherit;
                             float: left;
                             padding: 8px 80px;
+                            display: none;
                             span {
                                 float: left;
                                 width: 50px;

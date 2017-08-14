@@ -1,7 +1,10 @@
 /* less主体样式 */
+
 @mainColor: #f44848;
-@mainFont: SimHei, Microsoft YaHei;
+@mainFont: SimHei,
+Microsoft YaHei;
 @numberFont: microsoft yahei;
+
 /*reset*/
 
 body,
@@ -38,12 +41,14 @@ button {
     -webkit-font-smoothing: antialiased;
 }
 
+
 /* 初始化标签在所有浏览器中的margin、padding值 */
 
 fieldset,
 img {
     border: 0 none
 }
+
 
 /* 重置fieldset（表单分组）、图片的边框为0*/
 
@@ -55,12 +60,14 @@ li {
     list-style: none
 }
 
+
 /*重置类表前导符号为onne,menu在HTML5中有效 */
 
 blockquote,
 q {
     quotes: none
 }
+
 
 /* 重置嵌套引用的引号类型 */
 
@@ -72,6 +79,7 @@ q:after {
     content: none
 }
 
+
 /* 重置嵌套引用*/
 
 input,
@@ -81,6 +89,7 @@ button {
     vertical-align: middle
 }
 
+
 /* 重置表单控件垂直居中*/
 
 button {
@@ -89,11 +98,13 @@ button {
     cursor: pointer
 }
 
+
 /* 重置表单button按钮效果 */
 
 body {
     background: #f6f6f6;
 }
+
 
 /* 重置body 页面背景为灰色 */
 
@@ -104,11 +115,11 @@ input,
 select,
 textarea,
 button {
-    font-size: 14px;
-    //line-height: 1;
+    font-size: 14px; //line-height: 1;
     color: #333;
     font-family: SimHei;
 }
+
 
 /* 重置页面文字属性 */
 
@@ -120,6 +131,7 @@ em {
     font-style: normal;
     font-weight: normal;
 }
+
 
 /* 重置input中的placehold的颜色 */
 
@@ -141,6 +153,7 @@ textarea:-ms-input-placeholder {
     color: #c3c3c3;
 }
 
+
 /*重置input[type="number"]中的箭头*/
 
 input::-webkit-outer-spin-button,
@@ -153,11 +166,21 @@ input[type="number"] {
     -moz-appearance: textfield !important;
 }
 
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #fff !important;
+}
+
+
+
 /*重置input焦点状态样式*/
 
 input:focus {
     outline: none;
 }
+
 
 /* 重置链接a标签 */
 
@@ -175,6 +198,7 @@ a:focus {
     color: @mainColor;
 }
 
+
 /* 重置链接a标签的鼠标滑动效果 */
 
 address,
@@ -188,11 +212,13 @@ var {
     font-weight: normal
 }
 
+
 /* 重置样式标签的样式 */
 
 caption {
     display: none;
 }
+
 
 /* 重置表格标题为隐藏 */
 
@@ -203,21 +229,26 @@ table {
     table-layout: fixed;
 }
 
+
 /* 重置table属性 */
 
 img {
     vertical-align: top
 }
 
+
 /* 图片在当前行内的垂直位置 */
 
+
 /* 页面设置 */
+
 
 /* 取消a标签点击后的虚线框 */
 
 a {
     outline: none;
 }
+
 
 /* 取消a标签和button点击后的蓝色边框 */
 
@@ -230,22 +261,27 @@ a:focus {
     text-decoration: none;
 }
 
+
 /* a:active {
     star: expression(this.onFocus=this.blur());
 } */
 
+
 /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+
 
 /*
 ::selection {color: #fff;background-color: #4C6E78;}      
 ::-moz-selection {color: #fff;background-color: #4C6E78;}   
 */
 
+
 /*清除浮动*/
 
 .clear {
     clear: both;
 }
+
 
 /*清除浮动--推荐使用*/
 

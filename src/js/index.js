@@ -136,8 +136,9 @@
     function xsms() {
         var currentTime = new Date().getHours();
         var $activeTime = $(".sm-time");
+
         /*隐藏限时秒商品列表*/
-        var xsms_reset = function () {
+        function xsms_reset() {
             for (var i = 0; i < $activeTime.length - 1; i++) {
                 $activeTime.eq(i).siblings().hide();
             }
@@ -149,16 +150,19 @@
             for (var i = 0; i < $activeTime.length - 1; i++) {
                 $activeTime.eq(i).removeClass('active');
                 var _activeTimer = Number($activeTime.eq(i).html().slice(0, 2));
-                if (currentTime === _activeTimer || currentTime === (_activeTimer + 1)) {
+                if (currentTime < Number($activeTime.eq(0).html().slice(0, 2))) {
+                    $activeTime.eq(0).parent().addClass('active').find('ul').show();
+                } else if (currentTime === _activeTimer || currentTime === (_activeTimer + 1)) {
                     $activeTime.eq(i).parent().addClass('active').find('ul').show();
                 }
             }
         }
 
         xsms_current();
+
         $activeTime.parent().on("mouseover", function (event) {
             var _currentTarget = $(event.currentTarget);
-            if (_currentTarget.find("a").data("index") != 7) {
+            if (7 != _currentTarget.find("a").data("index")) {
                 xsms_reset();
                 _currentTarget.find('ul').show();
             }
@@ -167,6 +171,7 @@
             xsms_current();
         });
     }
+
 
     xsms();
 

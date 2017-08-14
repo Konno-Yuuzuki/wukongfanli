@@ -1,5 +1,6 @@
-(function () {
+$(document).ready(function () {
     "use strict"
+
     $(function () {
         // 如果不支持placeholder，用jQuery来完成
         if (!isSupportPlaceholder()) {
@@ -11,7 +12,6 @@
                     input(self, val);
                 }
             );
-
             /* 对password框的特殊处理
              * 1.创建一个text框
              * 2.获取焦点和失去焦点的时候切换
@@ -46,21 +46,22 @@
     function isSupportPlaceholder() {
         var input = document.createElement('input');
         return 'placeholder' in input;
-    };
+    }
 
 // jQuery替换placeholder的处理
     function input(obj, val) {
         var $input = obj;
-        var val = val;
-        $input.attr({value: val});
+        var value = val;
+        $input.attr({value: value});
         $input.focus(function () {
-            if ($input.val() == val) {
+            if ($input.val() == value) {
                 $(this).attr({value: ""});
             }
         }).blur(function () {
             if ($input.val() == "") {
-                $(this).attr({value: val});
+                $(this).attr({value: value});
             }
         });
-    };
-})();
+    }
+
+})
