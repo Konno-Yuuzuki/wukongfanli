@@ -35,7 +35,7 @@
     <div class="bannar">
         <div class="bannarContent">
             <div class="logo">
-                <img src="./image/icon/LOGO2.png" alt="">
+                <a href="./index.html"><img src="./image/icon/LOGO2.png" alt=""></a>
             </div>
             <div class="themeBannar">
                 <img src="./image/imgs/yqyj.png" alt="">
@@ -107,10 +107,10 @@
                         <caption>收益详情</caption>
                         <thead>
                         <tr>
-                            <th>排名</th>
-                            <th>用户名</th>
-                            <th>邀请人数</th>
-                            <th>邀请好友所获得收益</th>
+                            <th class="ranking">排名</th>
+                            <th class="username">用户名</th>
+                            <th class="inviteNumber">邀请人数</th>
+                            <th class="invitePrize">邀请好友所获得收益</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -178,9 +178,11 @@
                     </table>
                 </div>
             </div>
-            <div class="experienceImmediately">
-                <img src="./image/imgs/ljty_words.png" alt="">
-                <a href="">立即体验</a>
+            <div class="experienceImmediately clear clearfix">
+                <div class="immediatelyActive">
+                    <img src="./image/imgs/ljty_words.png" alt="">
+                    <a href="">立即体验</a>
+                </div>
             </div>
             <div class="gp_rules activeRules">
                 <div class="activeRulesDetail">
@@ -197,7 +199,7 @@
                             <p>红包开启：30天内存在悟空返利下单，返利到账后红包开启（不包括1元购、满减等活动）。</p></div>
                         <div><p>6、新用户注册可获得5元红包。</p>
                             <p>红包开启：15天内通过悟空返利下任意订单成功交易后红包开启（不包括1元购、满减等活动）。</p></div>
-                        <div><p>7、被邀请的好友从注册日期一年内（365天）下单，邀请人即可获得奖励。否则邀请奖励不再发放。</p></div>
+                        <div><p>7、被邀请的好友从注册日期一年内（365天）下单，邀请人即可获得奖励。否则奖励不再发放。</p></div>
                         <div><p>8、此活动由悟空返利官方举办、最终解释权归悟空返利所有，更多疑问请关注微信公众号“悟空返利”咨询。</p></div>
                     </div>
                 </div>
@@ -205,90 +207,92 @@
         </div>
         <div class="howInviteFriends">
             <div class="inviteFriendsSteps">
-                <h1>怎么邀请好友</h1>
+                <h1><img src="./image/imgs/how_invite_friends.png" alt=""></h1>
                 <div class="methodOne">
-                    <h2><label for="">方法一</label><span>在电脑上邀请好友</span></h2>
-                    <div class="allSteps">
+                    <h2 class="clear clearfix"><label for="">方法一</label><span>在电脑上邀请好友</span></h2>
+                    <div class="allSteps clear clearfix">
                         <div class="methodOneSteps">
                             <div class="steps">
-                                <i></i>
+                                <i class="www"></i>
                                 <p>登录后复制右下角的链接</p>
                             </div>
                         </div>
-                        <div class="pahtDirection">
+                        <div class="pathDirection">
                             <i></i>
                         </div>
                         <div class="methodOneSteps">
                             <div class="steps">
-                                <i></i>
+                                <i class="iconQQ"></i>
                                 <p>将链接通过QQ、微信等发送给好友</p>
                             </div>
                         </div>
-                        <div class="pahtDirection">
+                        <div class="pathDirection">
                             <i></i>
                         </div>
                         <div class="methodOneSteps">
                             <div class="steps">
-                                <i></i>
+                                <i class="consumeIcon"></i>
                                 <p>好友成功注册并并交易成功（实付金额≥69元）</p>
                             </div>
                         </div>
-                        <div class="pahtDirection">
+                        <div class="pathDirection">
                             <i></i>
                         </div>
                         <div class="methodOneSteps">
                             <div class="steps">
-                                <i></i>
+                                <i class="getMoneyIcon"></i>
                                 <p>得到相应的奖励</p>
                             </div>
                         </div>
                     </div>
-                    <div class="inviteLink">
-                        <div class="inviteLinkDetail">
-                            <div class="invieLinkExplain">
-                                <p>向好友发送邀请链接，被邀请好友成功注册并且成功交易（实付金额达69元）后，邀请人即可获得相对应奖励。邀请好友奖励将于被邀请人满足条件后，次日系统自动发放。</p>
-                                <div class="copyrightExplain">悟空返利享有活动的最终解释权</div>
+                </div>
+                <div class="inviteLink">
+                    <div class="inviteLinkDetail clear clearfix">
+                        <div class="inviteLinkExplain clear clearfix">
+                            <p>向好友发送邀请链接，被邀请好友成功注册并且成功交易（实付金额达69元）后，邀请人即可获得相对应奖励。邀请好友奖励将于被邀请人满足条件后，次日系统自动发放。</p>
+                            <div class="copyrightExplain">悟空返利享有活动的最终解释权</div>
+                        </div>
+                        <div class="getInviteLink">
+                            <label for="">邀请链接</label>
+                            <div class="link">
+                                https://member.hexindai.com/register/index-action_invite-sign_8fl1AZ0muVI8EX05DWVNTCxpD........
                             </div>
-                            <div class="getInviteLink">
-                                <label for="">邀请链接</label>
-                                <div class="link"></div>
-                                <div>
-                                    <a class="copyLink" href="">复制</a>
-                                    <span>复制该链接，并通过QQ、微信、朋友圈等途径发送给您的好友</span>
-                                </div>
+                            <div class="clear clearfix">
+                                <a class="copyLink" href="">复制</a>
+                                <span>复制该链接，并通过QQ、微信、朋友圈等途径发送给您的好友</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="methodTwo">
                     <h2><label for="">方法二</label><span>通过APP邀请好友</span></h2>
-                    <div class="allSteps">
-                        <div class="methodOneSteps">
-                            <div class="steps">
+                    <div class="allSteps clear clearfix">
+                        <div class="methodTwoSteps">
+                            <div class="steps first">
                                 <p>登录悟空返利APP依次打开"悟空""邀请好友"二维码邀请</p>
                             </div>
                         </div>
-                        <div class="pahtDirection">
+                        <div class="pathDirection">
                             <i></i>
                         </div>
-                        <div class="methodOneSteps">
-                            <div class="steps">
+                        <div class="methodTwoSteps ">
+                            <div class="steps second">
                                 <p>将二维码页面截图，通过微信、手机QQ等将其发送给好友</p>
                             </div>
                         </div>
-                        <div class="pahtDirection">
+                        <div class="pathDirection">
                             <i></i>
                         </div>
-                        <div class="methodOneSteps">
-                            <div class="steps">
-                                <p>好友成功注册并并交易成功（实付金额满69元）</p>
+                        <div class="methodTwoSteps">
+                            <div class="steps third">
+                                <p>好友扫码注册并且交易成功(实付金额满69元)</p>
                             </div>
                         </div>
-                        <div class="pahtDirection">
+                        <div class="pathDirection">
                             <i></i>
                         </div>
-                        <div class="methodOneSteps">
-                            <div class="steps">
+                        <div class="methodTwoSteps">
+                            <div class="steps forth">
                                 <i></i>
                                 <p>得到相应的奖励</p>
                             </div>
@@ -299,6 +303,7 @@
         </div>
     </div>
 </div>
+<div class="footer"></div>
 </body>
 
 </html>
