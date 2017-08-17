@@ -306,6 +306,60 @@
     }
 }
 
+/*分页*/
+.pagePosition {
+    text-align: center;
+    margin-top: 52px;
+    .pages {
+        display: inline-block;
+        height: 40px;
+        a,
+        span {
+            width: 40px;
+            height: 40px;
+            font-size: 12px;
+            color: #919191;
+            display: inline-block;
+            box-sizing: border-box;
+            margin-right: 1px;
+            box-shadow: 1px 1px 1px #d9d9d9;
+            background-color: #fff;
+            line-height: 40px;
+            float: left;
+        }
+        a {
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+                color: @mainColor;
+                //border: 1px solid @mainColor;
+            }
+        }
+        .pg-prev,
+        .pg-next {
+            width: 90px;
+            height: 40px;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            background-color: #fff;
+        }
+        .pg-prev {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .pg-next {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .current {
+            background-color: @mainColor;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
 /* 脚注 */
 
 .footer {

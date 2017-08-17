@@ -8,8 +8,12 @@
                 controller: ""
             },
             "/goods": {
-                templateUrl: "./view/db_detail.html",
+                templateUrl: "./view/1ydb_detail.html",
                 controller: "../js/1ydb/db_detail.js"
+            },
+            "zxjx": {
+                templateUrl: "./view/1ydb_zxjx.html",
+                controller: ""
             },
             "defaults": "/all"
         }
